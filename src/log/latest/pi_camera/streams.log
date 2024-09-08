@@ -1,0 +1,42 @@
+[6.637s] Invoking command in '/home/pi/final_ws/src/pi_camera_ros': PYTHONPATH=/home/pi/final_ws/src/build/pi_camera/prefix_override:/home/pi/final_ws/src/install/pi_camera/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/pi_camera build --build-base /home/pi/final_ws/src/build/pi_camera/build install --record /home/pi/final_ws/src/build/pi_camera/install.log --single-version-externally-managed install_data
+[8.626s] running egg_info
+[8.629s] creating ../build/pi_camera/pi_camera.egg-info
+[8.635s] writing ../build/pi_camera/pi_camera.egg-info/PKG-INFO
+[8.642s] writing dependency_links to ../build/pi_camera/pi_camera.egg-info/dependency_links.txt
+[8.649s] writing entry points to ../build/pi_camera/pi_camera.egg-info/entry_points.txt
+[8.655s] writing requirements to ../build/pi_camera/pi_camera.egg-info/requires.txt
+[8.712s] writing top-level names to ../build/pi_camera/pi_camera.egg-info/top_level.txt
+[8.721s] writing manifest file '../build/pi_camera/pi_camera.egg-info/SOURCES.txt'
+[8.750s] reading manifest file '../build/pi_camera/pi_camera.egg-info/SOURCES.txt'
+[8.765s] adding license file 'LICENSE'
+[8.774s] writing manifest file '../build/pi_camera/pi_camera.egg-info/SOURCES.txt'
+[8.784s] running build
+[8.788s] running build_py
+[8.793s] creating /home/pi/final_ws/src/build/pi_camera/build
+[8.813s] creating /home/pi/final_ws/src/build/pi_camera/build/lib
+[8.814s] creating /home/pi/final_ws/src/build/pi_camera/build/lib/pi_camera
+[8.814s] copying pi_camera/__init__.py -> /home/pi/final_ws/src/build/pi_camera/build/lib/pi_camera
+[8.815s] copying pi_camera/view_compressed.py -> /home/pi/final_ws/src/build/pi_camera/build/lib/pi_camera
+[8.824s] copying pi_camera/publish_compressed.py -> /home/pi/final_ws/src/build/pi_camera/build/lib/pi_camera
+[8.833s] running install
+[8.839s] running install_lib
+[8.852s] creating /home/pi/final_ws/src/install/pi_camera/lib/python3.10/site-packages/pi_camera
+[8.855s] copying /home/pi/final_ws/src/build/pi_camera/build/lib/pi_camera/__init__.py -> /home/pi/final_ws/src/install/pi_camera/lib/python3.10/site-packages/pi_camera
+[8.858s] copying /home/pi/final_ws/src/build/pi_camera/build/lib/pi_camera/view_compressed.py -> /home/pi/final_ws/src/install/pi_camera/lib/python3.10/site-packages/pi_camera
+[8.858s] copying /home/pi/final_ws/src/build/pi_camera/build/lib/pi_camera/publish_compressed.py -> /home/pi/final_ws/src/install/pi_camera/lib/python3.10/site-packages/pi_camera
+[8.859s] byte-compiling /home/pi/final_ws/src/install/pi_camera/lib/python3.10/site-packages/pi_camera/__init__.py to __init__.cpython-310.pyc
+[8.859s] byte-compiling /home/pi/final_ws/src/install/pi_camera/lib/python3.10/site-packages/pi_camera/view_compressed.py to view_compressed.cpython-310.pyc
+[8.864s] byte-compiling /home/pi/final_ws/src/install/pi_camera/lib/python3.10/site-packages/pi_camera/publish_compressed.py to publish_compressed.cpython-310.pyc
+[8.869s] running install_data
+[8.870s] creating /home/pi/final_ws/src/install/pi_camera/share/ament_index
+[8.879s] creating /home/pi/final_ws/src/install/pi_camera/share/ament_index/resource_index
+[8.888s] creating /home/pi/final_ws/src/install/pi_camera/share/ament_index/resource_index/packages
+[8.888s] copying resource/pi_camera -> /home/pi/final_ws/src/install/pi_camera/share/ament_index/resource_index/packages
+[8.889s] copying package.xml -> /home/pi/final_ws/src/install/pi_camera/share/pi_camera
+[8.890s] running install_egg_info
+[8.891s] Copying ../build/pi_camera/pi_camera.egg-info to /home/pi/final_ws/src/install/pi_camera/lib/python3.10/site-packages/pi_camera-0.0.0-py3.10.egg-info
+[8.907s] running install_scripts
+[9.138s] Installing publish_compressed script to /home/pi/final_ws/src/install/pi_camera/lib/pi_camera
+[9.145s] Installing view_compressed script to /home/pi/final_ws/src/install/pi_camera/lib/pi_camera
+[9.161s] writing list of installed files to '/home/pi/final_ws/src/build/pi_camera/install.log'
+[9.448s] Invoked command in '/home/pi/final_ws/src/pi_camera_ros' returned '0': PYTHONPATH=/home/pi/final_ws/src/build/pi_camera/prefix_override:/home/pi/final_ws/src/install/pi_camera/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/pi_camera build --build-base /home/pi/final_ws/src/build/pi_camera/build install --record /home/pi/final_ws/src/build/pi_camera/install.log --single-version-externally-managed install_data

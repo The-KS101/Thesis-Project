@@ -1,0 +1,681 @@
+[0.000000] (-) TimerEvent: {}
+[0.001162] (my_robot) JobQueued: {'identifier': 'my_robot', 'dependencies': OrderedDict()}
+[0.002414] (pi_camera) JobQueued: {'identifier': 'pi_camera', 'dependencies': OrderedDict()}
+[0.003095] (slam_ultrasonic) JobQueued: {'identifier': 'slam_ultrasonic', 'dependencies': OrderedDict()}
+[0.003650] (yolo) JobQueued: {'identifier': 'yolo', 'dependencies': OrderedDict()}
+[0.003860] (my_robot) JobStarted: {'identifier': 'my_robot'}
+[0.054009] (pi_camera) JobStarted: {'identifier': 'pi_camera'}
+[0.094119] (slam_ultrasonic) JobStarted: {'identifier': 'slam_ultrasonic'}
+[0.099122] (-) TimerEvent: {}
+[0.122715] (yolo) JobStarted: {'identifier': 'yolo'}
+[0.163369] (my_robot) JobProgress: {'identifier': 'my_robot', 'progress': 'cmake'}
+[0.164934] (my_robot) Command: {'cmd': ['/usr/bin/cmake', '/home/pi/final_ws/src/my_robot', '-DCMAKE_INSTALL_PREFIX=/home/pi/final_ws/src/install/my_robot'], 'cwd': '/home/pi/final_ws/src/build/my_robot', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pi'), ('SSH_CLIENT', 'fe80::14e7:5825:687f:85ed%wlan0 58344 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/pi/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/pi/final_ws/install/my_robot/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/pi/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/pi'), ('TERM_PROGRAM_VERSION', '1.85.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-9652ac9a-e855-4e60-a15d-8018360e432d.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/pi/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/pi/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/pi/final_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'pi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/pi/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/bin/remote-cli:/home/pi/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-3ce925e8f7.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/pi/final_ws/install/yolo:/home/pi/final_ws/install/slam_ultrasonic:/home/pi/final_ws/install/pi_camera:/home/pi/final_ws/install/my_robot:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/pi/final_ws/src/build/my_robot'), ('SSH_CONNECTION', 'fe80::14e7:5825:687f:85ed%wlan0 58344 fe80::e65f:1ff:feef:508a%wlan0 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/pi/final_ws/install/pi_camera/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/pi/final_ws/install/yolo:/home/pi/final_ws/install/slam_ultrasonic:/home/pi/final_ws/install/my_robot:/home/pi/final_ws/install/pi_camera:/opt/ros/humble')]), 'shell': False}
+[0.199358] (-) TimerEvent: {}
+[0.302363] (-) TimerEvent: {}
+[0.403765] (-) TimerEvent: {}
+[0.505611] (-) TimerEvent: {}
+[0.606625] (-) TimerEvent: {}
+[0.708796] (-) TimerEvent: {}
+[0.809733] (-) TimerEvent: {}
+[0.912923] (-) TimerEvent: {}
+[1.014677] (-) TimerEvent: {}
+[1.115495] (-) TimerEvent: {}
+[1.216279] (-) TimerEvent: {}
+[1.317057] (-) TimerEvent: {}
+[1.418082] (-) TimerEvent: {}
+[1.519402] (-) TimerEvent: {}
+[1.620685] (-) TimerEvent: {}
+[1.721583] (-) TimerEvent: {}
+[1.822653] (-) TimerEvent: {}
+[1.925817] (-) TimerEvent: {}
+[2.000025] (slam_ultrasonic) JobProgress: {'identifier': 'slam_ultrasonic', 'progress': 'cmake'}
+[2.000437] (slam_ultrasonic) Command: {'cmd': ['/usr/bin/cmake', '/home/pi/final_ws/src/slam_ultrasonic', '-DCMAKE_INSTALL_PREFIX=/home/pi/final_ws/src/install/slam_ultrasonic'], 'cwd': '/home/pi/final_ws/src/build/slam_ultrasonic', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pi'), ('SSH_CLIENT', 'fe80::14e7:5825:687f:85ed%wlan0 58344 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/pi/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/pi/final_ws/install/my_robot/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/pi/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/pi'), ('TERM_PROGRAM_VERSION', '1.85.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-9652ac9a-e855-4e60-a15d-8018360e432d.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/pi/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/pi/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/pi/final_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'pi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/pi/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/bin/remote-cli:/home/pi/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-3ce925e8f7.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/pi/final_ws/install/yolo:/home/pi/final_ws/install/slam_ultrasonic:/home/pi/final_ws/install/pi_camera:/home/pi/final_ws/install/my_robot:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/pi/final_ws/src/build/slam_ultrasonic'), ('SSH_CONNECTION', 'fe80::14e7:5825:687f:85ed%wlan0 58344 fe80::e65f:1ff:feef:508a%wlan0 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/pi/final_ws/install/pi_camera/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/pi/final_ws/install/yolo:/home/pi/final_ws/install/slam_ultrasonic:/home/pi/final_ws/install/my_robot:/home/pi/final_ws/install/pi_camera:/opt/ros/humble')]), 'shell': False}
+[2.010084] (my_robot) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[2.011373] (my_robot) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[2.012067] (my_robot) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[2.021058] (yolo) JobProgress: {'identifier': 'yolo', 'progress': 'cmake'}
+[2.026799] (yolo) Command: {'cmd': ['/usr/bin/cmake', '/home/pi/final_ws/src/yolo', '-DCMAKE_INSTALL_PREFIX=/home/pi/final_ws/src/install/yolo'], 'cwd': '/home/pi/final_ws/src/build/yolo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pi'), ('SSH_CLIENT', 'fe80::14e7:5825:687f:85ed%wlan0 58344 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/pi/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/pi/final_ws/install/my_robot/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/pi/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/pi'), ('TERM_PROGRAM_VERSION', '1.85.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-9652ac9a-e855-4e60-a15d-8018360e432d.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/pi/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/pi/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/pi/final_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'pi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/pi/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/bin/remote-cli:/home/pi/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-3ce925e8f7.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/pi/final_ws/install/yolo:/home/pi/final_ws/install/slam_ultrasonic:/home/pi/final_ws/install/pi_camera:/home/pi/final_ws/install/my_robot:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/pi/final_ws/src/build/yolo'), ('SSH_CONNECTION', 'fe80::14e7:5825:687f:85ed%wlan0 58344 fe80::e65f:1ff:feef:508a%wlan0 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/pi/final_ws/install/pi_camera/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/pi/final_ws/install/yolo:/home/pi/final_ws/install/slam_ultrasonic:/home/pi/final_ws/install/my_robot:/home/pi/final_ws/install/pi_camera:/opt/ros/humble')]), 'shell': False}
+[2.036985] (-) TimerEvent: {}
+[2.140931] (-) TimerEvent: {}
+[2.160428] (my_robot) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.229414] (my_robot) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[2.234154] (my_robot) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.238199] (my_robot) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.244652] (-) TimerEvent: {}
+[2.269714] (my_robot) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.344923] (-) TimerEvent: {}
+[2.412498] (yolo) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[2.445391] (-) TimerEvent: {}
+[2.518373] (slam_ultrasonic) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[2.545898] (-) TimerEvent: {}
+[2.650989] (-) TimerEvent: {}
+[2.752017] (-) TimerEvent: {}
+[2.853349] (-) TimerEvent: {}
+[2.956785] (-) TimerEvent: {}
+[3.029437] (my_robot) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[3.056965] (-) TimerEvent: {}
+[3.096147] (yolo) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[3.119825] (my_robot) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[3.123435] (my_robot) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[3.128647] (my_robot) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[3.143875] (slam_ultrasonic) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[3.157114] (-) TimerEvent: {}
+[3.190925] (yolo) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[3.204406] (my_robot) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[3.246845] (slam_ultrasonic) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[3.257279] (-) TimerEvent: {}
+[3.358085] (-) TimerEvent: {}
+[3.459288] (-) TimerEvent: {}
+[3.560529] (-) TimerEvent: {}
+[3.661563] (-) TimerEvent: {}
+[3.762611] (-) TimerEvent: {}
+[3.863667] (-) TimerEvent: {}
+[3.965077] (-) TimerEvent: {}
+[4.025242] (yolo) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[4.065320] (-) TimerEvent: {}
+[4.166989] (yolo) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[4.167751] (-) TimerEvent: {}
+[4.169846] (yolo) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[4.174392] (yolo) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[4.201253] (slam_ultrasonic) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[4.216085] (yolo) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[4.268142] (-) TimerEvent: {}
+[4.331801] (slam_ultrasonic) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[4.358403] (slam_ultrasonic) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[4.363046] (slam_ultrasonic) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[4.368258] (-) TimerEvent: {}
+[4.415306] (slam_ultrasonic) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[4.468430] (-) TimerEvent: {}
+[4.569341] (-) TimerEvent: {}
+[4.670323] (-) TimerEvent: {}
+[4.772027] (-) TimerEvent: {}
+[4.817773] (yolo) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[4.865822] (yolo) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[4.871363] (yolo) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[4.877199] (-) TimerEvent: {}
+[4.881473] (yolo) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[4.936027] (yolo) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[4.977394] (-) TimerEvent: {}
+[5.080091] (-) TimerEvent: {}
+[5.183164] (-) TimerEvent: {}
+[5.196521] (my_robot) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[5.283507] (-) TimerEvent: {}
+[5.368545] (slam_ultrasonic) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[5.383954] (-) TimerEvent: {}
+[5.424074] (slam_ultrasonic) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[5.426366] (slam_ultrasonic) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[5.430787] (slam_ultrasonic) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[5.481871] (slam_ultrasonic) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[5.484117] (-) TimerEvent: {}
+[5.585764] (-) TimerEvent: {}
+[5.687651] (-) TimerEvent: {}
+[5.789747] (-) TimerEvent: {}
+[5.891629] (-) TimerEvent: {}
+[5.992708] (-) TimerEvent: {}
+[6.095622] (-) TimerEvent: {}
+[6.201408] (-) TimerEvent: {}
+[6.275715] (yolo) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[6.302388] (-) TimerEvent: {}
+[6.407002] (-) TimerEvent: {}
+[6.511175] (-) TimerEvent: {}
+[6.518060] (my_robot) StdoutLine: {'line': b'-- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[6.611401] (-) TimerEvent: {}
+[6.688104] (pi_camera) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../build/pi_camera', 'build', '--build-base', '/home/pi/final_ws/src/build/pi_camera/build', 'install', '--record', '/home/pi/final_ws/src/build/pi_camera/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/pi/final_ws/src/pi_camera_ros', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'pi', 'SSH_CLIENT': 'fe80::14e7:5825:687f:85ed%wlan0 58344 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/pi/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/pi/final_ws/install/my_robot/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'BROWSER': '/home/pi/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/bin/helpers/browser.sh', 'MOTD_SHOWN': 'pam', 'HOME': '/home/pi', 'TERM_PROGRAM_VERSION': '1.85.1', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-9652ac9a-e855-4e60-a15d-8018360e432d.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/pi/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/pi/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/node', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/pi/final_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'pi', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '3', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/pi/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/bin/remote-cli:/home/pi/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-3ce925e8f7.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/pi/final_ws/install/yolo:/home/pi/final_ws/install/slam_ultrasonic:/home/pi/final_ws/install/pi_camera:/home/pi/final_ws/install/my_robot:/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/pi/final_ws/src/build/pi_camera', 'SSH_CONNECTION': 'fe80::14e7:5825:687f:85ed%wlan0 58344 fe80::e65f:1ff:feef:508a%wlan0 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/pi/final_ws/src/build/pi_camera/prefix_override:/home/pi/final_ws/src/install/pi_camera/lib/python3.10/site-packages:/home/pi/final_ws/install/pi_camera/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/pi/final_ws/install/yolo:/home/pi/final_ws/install/slam_ultrasonic:/home/pi/final_ws/install/my_robot'}, 'shell': False}
+[6.708998] (slam_ultrasonic) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[6.711581] (-) TimerEvent: {}
+[6.812440] (-) TimerEvent: {}
+[6.913302] (-) TimerEvent: {}
+[7.014219] (-) TimerEvent: {}
+[7.116232] (-) TimerEvent: {}
+[7.217154] (-) TimerEvent: {}
+[7.259779] (yolo) StdoutLine: {'line': b'-- Found rclpy: 3.3.13 (/opt/ros/humble/share/rclpy/cmake)\n'}
+[7.292494] (yolo) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[7.317318] (-) TimerEvent: {}
+[7.418093] (-) TimerEvent: {}
+[7.448459] (my_robot) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[7.518282] (-) TimerEvent: {}
+[7.538881] (my_robot) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[7.618463] (-) TimerEvent: {}
+[7.661588] (my_robot) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[7.703089] (slam_ultrasonic) StdoutLine: {'line': b'-- Found rclpy: 3.3.13 (/opt/ros/humble/share/rclpy/cmake)\n'}
+[7.710941] (yolo) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[7.718620] (-) TimerEvent: {}
+[7.780704] (yolo) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[7.818788] (-) TimerEvent: {}
+[7.850184] (my_robot) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[7.874150] (yolo) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[7.918994] (-) TimerEvent: {}
+[7.994817] (yolo) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[8.019904] (-) TimerEvent: {}
+[8.086453] (my_robot) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[8.120489] (-) TimerEvent: {}
+[8.180276] (yolo) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[8.220671] (-) TimerEvent: {}
+[8.297225] (slam_ultrasonic) StdoutLine: {'line': b'-- Configuring done\n'}
+[8.321461] (-) TimerEvent: {}
+[8.400983] (slam_ultrasonic) StdoutLine: {'line': b'-- Generating done\n'}
+[8.421849] (-) TimerEvent: {}
+[8.444529] (slam_ultrasonic) StdoutLine: {'line': b'-- Build files have been written to: /home/pi/final_ws/src/build/slam_ultrasonic\n'}
+[8.473277] (slam_ultrasonic) CommandEnded: {'returncode': 0}
+[8.474951] (slam_ultrasonic) JobProgress: {'identifier': 'slam_ultrasonic', 'progress': 'build'}
+[8.475137] (slam_ultrasonic) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/pi/final_ws/src/build/slam_ultrasonic', '--', '-j4', '-l4'], 'cwd': '/home/pi/final_ws/src/build/slam_ultrasonic', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pi'), ('SSH_CLIENT', 'fe80::14e7:5825:687f:85ed%wlan0 58344 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/pi/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/pi/final_ws/install/my_robot/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/pi/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/pi'), ('TERM_PROGRAM_VERSION', '1.85.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-9652ac9a-e855-4e60-a15d-8018360e432d.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/pi/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/pi/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/pi/final_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'pi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/pi/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/bin/remote-cli:/home/pi/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-3ce925e8f7.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/pi/final_ws/install/yolo:/home/pi/final_ws/install/slam_ultrasonic:/home/pi/final_ws/install/pi_camera:/home/pi/final_ws/install/my_robot:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/pi/final_ws/src/build/slam_ultrasonic'), ('SSH_CONNECTION', 'fe80::14e7:5825:687f:85ed%wlan0 58344 fe80::e65f:1ff:feef:508a%wlan0 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/pi/final_ws/install/pi_camera/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/pi/final_ws/install/yolo:/home/pi/final_ws/install/slam_ultrasonic:/home/pi/final_ws/install/my_robot:/home/pi/final_ws/install/pi_camera:/opt/ros/humble')]), 'shell': False}
+[8.522036] (-) TimerEvent: {}
+[8.623282] (-) TimerEvent: {}
+[8.676053] (slam_ultrasonic) CommandEnded: {'returncode': 0}
+[8.679241] (pi_camera) StdoutLine: {'line': b'running egg_info\n'}
+[8.683066] (pi_camera) StdoutLine: {'line': b'creating ../build/pi_camera/pi_camera.egg-info\n'}
+[8.688353] (pi_camera) StdoutLine: {'line': b'writing ../build/pi_camera/pi_camera.egg-info/PKG-INFO\n'}
+[8.696146] (pi_camera) StdoutLine: {'line': b'writing dependency_links to ../build/pi_camera/pi_camera.egg-info/dependency_links.txt\n'}
+[8.702239] (pi_camera) StdoutLine: {'line': b'writing entry points to ../build/pi_camera/pi_camera.egg-info/entry_points.txt\n'}
+[8.708299] (pi_camera) StdoutLine: {'line': b'writing requirements to ../build/pi_camera/pi_camera.egg-info/requires.txt\n'}
+[8.723509] (-) TimerEvent: {}
+[8.765944] (pi_camera) StdoutLine: {'line': b'writing top-level names to ../build/pi_camera/pi_camera.egg-info/top_level.txt\n'}
+[8.774676] (pi_camera) StdoutLine: {'line': b"writing manifest file '../build/pi_camera/pi_camera.egg-info/SOURCES.txt'\n"}
+[8.803244] (pi_camera) StdoutLine: {'line': b"reading manifest file '../build/pi_camera/pi_camera.egg-info/SOURCES.txt'\n"}
+[8.818809] (pi_camera) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[8.823693] (-) TimerEvent: {}
+[8.828000] (pi_camera) StdoutLine: {'line': b"writing manifest file '../build/pi_camera/pi_camera.egg-info/SOURCES.txt'\n"}
+[8.837673] (pi_camera) StdoutLine: {'line': b'running build\n'}
+[8.841246] (pi_camera) StdoutLine: {'line': b'running build_py\n'}
+[8.846438] (pi_camera) StdoutLine: {'line': b'creating /home/pi/final_ws/src/build/pi_camera/build\n'}
+[8.866100] (slam_ultrasonic) JobProgress: {'identifier': 'slam_ultrasonic', 'progress': 'install'}
+[8.866855] (pi_camera) StdoutLine: {'line': b'creating /home/pi/final_ws/src/build/pi_camera/build/lib\n'}
+[8.867520] (pi_camera) StdoutLine: {'line': b'creating /home/pi/final_ws/src/build/pi_camera/build/lib/pi_camera\n'}
+[8.868018] (pi_camera) StdoutLine: {'line': b'copying pi_camera/__init__.py -> /home/pi/final_ws/src/build/pi_camera/build/lib/pi_camera\n'}
+[8.868568] (pi_camera) StdoutLine: {'line': b'copying pi_camera/view_compressed.py -> /home/pi/final_ws/src/build/pi_camera/build/lib/pi_camera\n'}
+[8.877838] (pi_camera) StdoutLine: {'line': b'copying pi_camera/publish_compressed.py -> /home/pi/final_ws/src/build/pi_camera/build/lib/pi_camera\n'}
+[8.886990] (pi_camera) StdoutLine: {'line': b'running install\n'}
+[8.892149] (pi_camera) StdoutLine: {'line': b'running install_lib\n'}
+[8.903596] (pi_camera) StdoutLine: {'line': b'creating /home/pi/final_ws/src/install/pi_camera/lib/python3.10/site-packages/pi_camera\n'}
+[8.908556] (pi_camera) StdoutLine: {'line': b'copying /home/pi/final_ws/src/build/pi_camera/build/lib/pi_camera/__init__.py -> /home/pi/final_ws/src/install/pi_camera/lib/python3.10/site-packages/pi_camera\n'}
+[8.909228] (pi_camera) StdoutLine: {'line': b'copying /home/pi/final_ws/src/build/pi_camera/build/lib/pi_camera/view_compressed.py -> /home/pi/final_ws/src/install/pi_camera/lib/python3.10/site-packages/pi_camera\n'}
+[8.911963] (pi_camera) StdoutLine: {'line': b'copying /home/pi/final_ws/src/build/pi_camera/build/lib/pi_camera/publish_compressed.py -> /home/pi/final_ws/src/install/pi_camera/lib/python3.10/site-packages/pi_camera\n'}
+[8.912655] (pi_camera) StdoutLine: {'line': b'byte-compiling /home/pi/final_ws/src/install/pi_camera/lib/python3.10/site-packages/pi_camera/__init__.py to __init__.cpython-310.pyc\n'}
+[8.913101] (pi_camera) StdoutLine: {'line': b'byte-compiling /home/pi/final_ws/src/install/pi_camera/lib/python3.10/site-packages/pi_camera/view_compressed.py to view_compressed.cpython-310.pyc\n'}
+[8.917255] (pi_camera) StdoutLine: {'line': b'byte-compiling /home/pi/final_ws/src/install/pi_camera/lib/python3.10/site-packages/pi_camera/publish_compressed.py to publish_compressed.cpython-310.pyc\n'}
+[8.920433] (pi_camera) StdoutLine: {'line': b'running install_data\n'}
+[8.923403] (pi_camera) StdoutLine: {'line': b'creating /home/pi/final_ws/src/install/pi_camera/share/ament_index\n'}
+[8.923884] (-) TimerEvent: {}
+[8.932712] (pi_camera) StdoutLine: {'line': b'creating /home/pi/final_ws/src/install/pi_camera/share/ament_index/resource_index\n'}
+[8.939496] (pi_camera) StdoutLine: {'line': b'creating /home/pi/final_ws/src/install/pi_camera/share/ament_index/resource_index/packages\n'}
+[8.942055] (pi_camera) StdoutLine: {'line': b'copying resource/pi_camera -> /home/pi/final_ws/src/install/pi_camera/share/ament_index/resource_index/packages\n'}
+[8.942681] (pi_camera) StdoutLine: {'line': b'copying package.xml -> /home/pi/final_ws/src/install/pi_camera/share/pi_camera\n'}
+[8.943388] (pi_camera) StdoutLine: {'line': b'running install_egg_info\n'}
+[8.944255] (pi_camera) StdoutLine: {'line': b'Copying ../build/pi_camera/pi_camera.egg-info to /home/pi/final_ws/src/install/pi_camera/lib/python3.10/site-packages/pi_camera-0.0.0-py3.10.egg-info\n'}
+[8.944878] (my_robot) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[8.960094] (pi_camera) StdoutLine: {'line': b'running install_scripts\n'}
+[8.978545] (slam_ultrasonic) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/pi/final_ws/src/build/slam_ultrasonic'], 'cwd': '/home/pi/final_ws/src/build/slam_ultrasonic', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pi'), ('SSH_CLIENT', 'fe80::14e7:5825:687f:85ed%wlan0 58344 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/pi/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/pi/final_ws/install/my_robot/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/pi/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/pi'), ('TERM_PROGRAM_VERSION', '1.85.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-9652ac9a-e855-4e60-a15d-8018360e432d.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/pi/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/pi/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/pi/final_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'pi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/pi/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/bin/remote-cli:/home/pi/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-3ce925e8f7.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/pi/final_ws/install/yolo:/home/pi/final_ws/install/slam_ultrasonic:/home/pi/final_ws/install/pi_camera:/home/pi/final_ws/install/my_robot:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/pi/final_ws/src/build/slam_ultrasonic'), ('SSH_CONNECTION', 'fe80::14e7:5825:687f:85ed%wlan0 58344 fe80::e65f:1ff:feef:508a%wlan0 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/pi/final_ws/install/pi_camera/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/pi/final_ws/install/yolo:/home/pi/final_ws/install/slam_ultrasonic:/home/pi/final_ws/install/my_robot:/home/pi/final_ws/install/pi_camera:/opt/ros/humble')]), 'shell': False}
+[8.994953] (my_robot) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[9.024144] (-) TimerEvent: {}
+[9.031032] (slam_ultrasonic) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[9.042832] (slam_ultrasonic) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/lib/slam_ultrasonic/src\n'}
+[9.048960] (slam_ultrasonic) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/lib/slam_ultrasonic/src/servo_node.py\n'}
+[9.054727] (slam_ultrasonic) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/lib/slam_ultrasonic/src/ultrasonic_node.py\n'}
+[9.085026] (slam_ultrasonic) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/lib/slam_ultrasonic/src/cmd_vel_to_joints.py\n'}
+[9.091751] (slam_ultrasonic) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/lib/slam_ultrasonic/launch\n'}
+[9.095884] (slam_ultrasonic) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/lib/slam_ultrasonic/launch/localization_launch.py\n'}
+[9.100556] (slam_ultrasonic) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/lib/slam_ultrasonic/launch/camera.launch.py\n'}
+[9.108213] (slam_ultrasonic) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/lib/slam_ultrasonic/launch/map_base_launch.py\n'}
+[9.112724] (slam_ultrasonic) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/lib/slam_ultrasonic/launch/online_async_launch.py\n'}
+[9.117260] (slam_ultrasonic) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/lib/slam_ultrasonic/launch/navigation_launch.py\n'}
+[9.124390] (slam_ultrasonic) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/lib/slam_ultrasonic/launch/slam_launch.py\n'}
+[9.125149] (-) TimerEvent: {}
+[9.129000] (slam_ultrasonic) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/lib/slam_ultrasonic/config\n'}
+[9.133571] (slam_ultrasonic) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/lib/slam_ultrasonic/config/nav2_params.yaml\n'}
+[9.140556] (slam_ultrasonic) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/lib/slam_ultrasonic/config/twist_mux.yaml\n'}
+[9.145699] (slam_ultrasonic) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/lib/slam_ultrasonic/config/mapper_params_online_async.yaml\n'}
+[9.152620] (slam_ultrasonic) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic//launch\n'}
+[9.156018] (slam_ultrasonic) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic//launch/localization_launch.py\n'}
+[9.159671] (slam_ultrasonic) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic//launch/camera.launch.py\n'}
+[9.165474] (slam_ultrasonic) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic//launch/map_base_launch.py\n'}
+[9.168924] (slam_ultrasonic) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic//launch/online_async_launch.py\n'}
+[9.174703] (slam_ultrasonic) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic//launch/navigation_launch.py\n'}
+[9.178678] (slam_ultrasonic) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic//launch/slam_launch.py\n'}
+[9.185159] (slam_ultrasonic) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic//src\n'}
+[9.187583] (slam_ultrasonic) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic//src/servo_node.py\n'}
+[9.191224] (pi_camera) StdoutLine: {'line': b'Installing publish_compressed script to /home/pi/final_ws/src/install/pi_camera/lib/pi_camera\n'}
+[9.194552] (slam_ultrasonic) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic//src/ultrasonic_node.py\n'}
+[9.198114] (pi_camera) StdoutLine: {'line': b'Installing view_compressed script to /home/pi/final_ws/src/install/pi_camera/lib/pi_camera\n'}
+[9.198937] (slam_ultrasonic) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic//src/cmd_vel_to_joints.py\n'}
+[9.203714] (slam_ultrasonic) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic//config\n'}
+[9.207171] (slam_ultrasonic) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic//config/nav2_params.yaml\n'}
+[9.213726] (pi_camera) StdoutLine: {'line': b"writing list of installed files to '/home/pi/final_ws/src/build/pi_camera/install.log'\n"}
+[9.214988] (slam_ultrasonic) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic//config/twist_mux.yaml\n'}
+[9.216396] (slam_ultrasonic) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic//config/mapper_params_online_async.yaml\n'}
+[9.225498] (-) TimerEvent: {}
+[9.233956] (slam_ultrasonic) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/lib/slam_ultrasonic/servo_node.py\n'}
+[9.238002] (slam_ultrasonic) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/lib/slam_ultrasonic/ultrasonic_node.py\n'}
+[9.238901] (slam_ultrasonic) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/lib/slam_ultrasonic/cmd_vel_to_joints.py\n'}
+[9.239565] (slam_ultrasonic) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/ament_index/resource_index/package_run_dependencies/slam_ultrasonic\n'}
+[9.252368] (slam_ultrasonic) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/ament_index/resource_index/parent_prefix_path/slam_ultrasonic\n'}
+[9.253392] (slam_ultrasonic) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic/environment/ament_prefix_path.sh\n'}
+[9.258130] (slam_ultrasonic) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic/environment/ament_prefix_path.dsv\n'}
+[9.259057] (slam_ultrasonic) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic/environment/path.sh\n'}
+[9.259977] (slam_ultrasonic) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic/environment/path.dsv\n'}
+[9.270868] (slam_ultrasonic) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic/local_setup.bash\n'}
+[9.277008] (slam_ultrasonic) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic/local_setup.sh\n'}
+[9.282948] (slam_ultrasonic) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic/local_setup.zsh\n'}
+[9.289560] (slam_ultrasonic) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic/local_setup.dsv\n'}
+[9.295337] (slam_ultrasonic) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic/package.dsv\n'}
+[9.302648] (slam_ultrasonic) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/ament_index/resource_index/packages/slam_ultrasonic\n'}
+[9.309496] (slam_ultrasonic) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic/cmake/slam_ultrasonicConfig.cmake\n'}
+[9.321916] (slam_ultrasonic) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic/cmake/slam_ultrasonicConfig-version.cmake\n'}
+[9.332032] (-) TimerEvent: {}
+[9.344761] (slam_ultrasonic) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic/package.xml\n'}
+[9.349135] (slam_ultrasonic) CommandEnded: {'returncode': 0}
+[9.400631] (yolo) StdoutLine: {'line': b'-- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)\n'}
+[9.432610] (-) TimerEvent: {}
+[9.501628] (pi_camera) CommandEnded: {'returncode': 0}
+[9.532844] (-) TimerEvent: {}
+[9.562733] (pi_camera) JobEnded: {'identifier': 'pi_camera', 'rc': 0}
+[9.633000] (-) TimerEvent: {}
+[9.702334] (slam_ultrasonic) JobEnded: {'identifier': 'slam_ultrasonic', 'rc': 0}
+[9.733207] (-) TimerEvent: {}
+[9.834143] (-) TimerEvent: {}
+[9.899387] (yolo) StdoutLine: {'line': b'-- Configuring done\n'}
+[9.934300] (-) TimerEvent: {}
+[9.964131] (yolo) StdoutLine: {'line': b'-- Generating done\n'}
+[9.970938] (yolo) StdoutLine: {'line': b'-- Build files have been written to: /home/pi/final_ws/src/build/yolo\n'}
+[10.012858] (yolo) CommandEnded: {'returncode': 0}
+[10.015025] (yolo) JobProgress: {'identifier': 'yolo', 'progress': 'build'}
+[10.015290] (yolo) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/pi/final_ws/src/build/yolo', '--', '-j4', '-l4'], 'cwd': '/home/pi/final_ws/src/build/yolo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pi'), ('SSH_CLIENT', 'fe80::14e7:5825:687f:85ed%wlan0 58344 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/pi/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/pi/final_ws/install/my_robot/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/pi/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/pi'), ('TERM_PROGRAM_VERSION', '1.85.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-9652ac9a-e855-4e60-a15d-8018360e432d.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/pi/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/pi/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/pi/final_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'pi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/pi/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/bin/remote-cli:/home/pi/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-3ce925e8f7.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/pi/final_ws/install/yolo:/home/pi/final_ws/install/slam_ultrasonic:/home/pi/final_ws/install/pi_camera:/home/pi/final_ws/install/my_robot:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/pi/final_ws/src/build/yolo'), ('SSH_CONNECTION', 'fe80::14e7:5825:687f:85ed%wlan0 58344 fe80::e65f:1ff:feef:508a%wlan0 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/pi/final_ws/install/pi_camera/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/pi/final_ws/install/yolo:/home/pi/final_ws/install/slam_ultrasonic:/home/pi/final_ws/install/my_robot:/home/pi/final_ws/install/pi_camera:/opt/ros/humble')]), 'shell': False}
+[10.034995] (-) TimerEvent: {}
+[10.131202] (my_robot) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[10.134827] (-) TimerEvent: {}
+[10.196707] (yolo) CommandEnded: {'returncode': 0}
+[10.234961] (-) TimerEvent: {}
+[10.335790] (-) TimerEvent: {}
+[10.344417] (yolo) JobProgress: {'identifier': 'yolo', 'progress': 'install'}
+[10.350940] (yolo) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/pi/final_ws/src/build/yolo'], 'cwd': '/home/pi/final_ws/src/build/yolo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pi'), ('SSH_CLIENT', 'fe80::14e7:5825:687f:85ed%wlan0 58344 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/pi/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/pi/final_ws/install/my_robot/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/pi/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/pi'), ('TERM_PROGRAM_VERSION', '1.85.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-9652ac9a-e855-4e60-a15d-8018360e432d.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/pi/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/pi/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/pi/final_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'pi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/pi/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/bin/remote-cli:/home/pi/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-3ce925e8f7.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/pi/final_ws/install/yolo:/home/pi/final_ws/install/slam_ultrasonic:/home/pi/final_ws/install/pi_camera:/home/pi/final_ws/install/my_robot:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/pi/final_ws/src/build/yolo'), ('SSH_CONNECTION', 'fe80::14e7:5825:687f:85ed%wlan0 58344 fe80::e65f:1ff:feef:508a%wlan0 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/pi/final_ws/install/pi_camera/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/pi/final_ws/install/yolo:/home/pi/final_ws/install/slam_ultrasonic:/home/pi/final_ws/install/my_robot:/home/pi/final_ws/install/pi_camera:/opt/ros/humble')]), 'shell': False}
+[10.386312] (yolo) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[10.387215] (yolo) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/yolo/share/yolo//weights\n'}
+[10.389243] (yolo) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/yolo/share/yolo//weights/best.pt\n'}
+[10.435970] (-) TimerEvent: {}
+[10.438419] (my_robot) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[10.536150] (-) TimerEvent: {}
+[10.544181] (yolo) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/yolo/share/yolo//src\n'}
+[10.546584] (yolo) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/yolo/share/yolo//src/object_detection.py\n'}
+[10.548378] (yolo) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/yolo/lib/yolo/src\n'}
+[10.550075] (yolo) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/yolo/lib/yolo/src/object_detection.py\n'}
+[10.551601] (yolo) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/yolo/lib/yolo/weights\n'}
+[10.552024] (yolo) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/yolo/lib/yolo/weights/best.pt\n'}
+[10.599960] (yolo) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/yolo/lib/yolo/object_detection.py\n'}
+[10.601977] (yolo) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/yolo/share/ament_index/resource_index/package_run_dependencies/yolo\n'}
+[10.603894] (yolo) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/yolo/share/ament_index/resource_index/parent_prefix_path/yolo\n'}
+[10.605640] (yolo) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/yolo/share/yolo/environment/ament_prefix_path.sh\n'}
+[10.607963] (yolo) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/yolo/share/yolo/environment/ament_prefix_path.dsv\n'}
+[10.609378] (yolo) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/yolo/share/yolo/environment/path.sh\n'}
+[10.611148] (yolo) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/yolo/share/yolo/environment/path.dsv\n'}
+[10.611572] (yolo) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/yolo/share/yolo/local_setup.bash\n'}
+[10.614670] (yolo) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/yolo/share/yolo/local_setup.sh\n'}
+[10.617307] (yolo) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/yolo/share/yolo/local_setup.zsh\n'}
+[10.620159] (yolo) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/yolo/share/yolo/local_setup.dsv\n'}
+[10.621831] (yolo) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/yolo/share/yolo/package.dsv\n'}
+[10.633566] (yolo) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/yolo/share/ament_index/resource_index/packages/yolo\n'}
+[10.634006] (yolo) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/yolo/share/yolo/cmake/yoloConfig.cmake\n'}
+[10.634312] (yolo) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/yolo/share/yolo/cmake/yoloConfig-version.cmake\n'}
+[10.634704] (yolo) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/yolo/share/yolo/package.xml\n'}
+[10.635012] (yolo) CommandEnded: {'returncode': 0}
+[10.636716] (-) TimerEvent: {}
+[10.737812] (-) TimerEvent: {}
+[10.810250] (yolo) JobEnded: {'identifier': 'yolo', 'rc': 0}
+[10.837997] (-) TimerEvent: {}
+[10.934268] (my_robot) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[10.938248] (-) TimerEvent: {}
+[11.039164] (-) TimerEvent: {}
+[11.068138] (my_robot) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[11.139406] (-) TimerEvent: {}
+[11.240456] (-) TimerEvent: {}
+[11.341414] (-) TimerEvent: {}
+[11.428674] (my_robot) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[11.430843] (my_robot) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[11.441671] (-) TimerEvent: {}
+[11.545595] (-) TimerEvent: {}
+[11.648335] (-) TimerEvent: {}
+[11.749165] (-) TimerEvent: {}
+[11.838377] (my_robot) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[11.842842] (my_robot) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[11.849361] (-) TimerEvent: {}
+[11.953060] (-) TimerEvent: {}
+[12.054146] (-) TimerEvent: {}
+[12.155213] (-) TimerEvent: {}
+[12.256332] (-) TimerEvent: {}
+[12.357336] (-) TimerEvent: {}
+[12.460201] (-) TimerEvent: {}
+[12.562431] (-) TimerEvent: {}
+[12.663308] (-) TimerEvent: {}
+[12.718333] (my_robot) StdoutLine: {'line': b'-- Found hardware_interface: 2.41.0 (/opt/ros/humble/share/hardware_interface/cmake)\n'}
+[12.763524] (-) TimerEvent: {}
+[12.864672] (-) TimerEvent: {}
+[12.965547] (-) TimerEvent: {}
+[13.066417] (-) TimerEvent: {}
+[13.167493] (-) TimerEvent: {}
+[13.268330] (-) TimerEvent: {}
+[13.369177] (-) TimerEvent: {}
+[13.470269] (-) TimerEvent: {}
+[13.571153] (-) TimerEvent: {}
+[13.672044] (-) TimerEvent: {}
+[13.772839] (-) TimerEvent: {}
+[13.873614] (-) TimerEvent: {}
+[13.974410] (-) TimerEvent: {}
+[14.075180] (-) TimerEvent: {}
+[14.176105] (-) TimerEvent: {}
+[14.277568] (-) TimerEvent: {}
+[14.378420] (-) TimerEvent: {}
+[14.479359] (-) TimerEvent: {}
+[14.580560] (-) TimerEvent: {}
+[14.681427] (-) TimerEvent: {}
+[14.782255] (-) TimerEvent: {}
+[14.883254] (-) TimerEvent: {}
+[14.984222] (-) TimerEvent: {}
+[15.085206] (-) TimerEvent: {}
+[15.185953] (-) TimerEvent: {}
+[15.286766] (-) TimerEvent: {}
+[15.387564] (-) TimerEvent: {}
+[15.488353] (-) TimerEvent: {}
+[15.589239] (-) TimerEvent: {}
+[15.613875] (my_robot) StdoutLine: {'line': b'-- Found controller_manager: 2.41.0 (/opt/ros/humble/share/controller_manager/cmake)\n'}
+[15.689466] (-) TimerEvent: {}
+[15.790284] (-) TimerEvent: {}
+[15.891135] (-) TimerEvent: {}
+[15.992020] (-) TimerEvent: {}
+[16.092917] (-) TimerEvent: {}
+[16.193772] (-) TimerEvent: {}
+[16.294623] (-) TimerEvent: {}
+[16.395529] (-) TimerEvent: {}
+[16.496342] (-) TimerEvent: {}
+[16.597203] (-) TimerEvent: {}
+[16.697992] (-) TimerEvent: {}
+[16.798862] (-) TimerEvent: {}
+[16.899694] (-) TimerEvent: {}
+[17.000507] (-) TimerEvent: {}
+[17.101337] (-) TimerEvent: {}
+[17.202068] (-) TimerEvent: {}
+[17.302941] (-) TimerEvent: {}
+[17.348808] (my_robot) StdoutLine: {'line': b'-- Found diff_drive_controller: 2.35.0 (/opt/ros/humble/share/diff_drive_controller/cmake)\n'}
+[17.403119] (-) TimerEvent: {}
+[17.503941] (-) TimerEvent: {}
+[17.604746] (-) TimerEvent: {}
+[17.701718] (my_robot) StdoutLine: {'line': b'-- Found parameter_traits: 0.3.8 (/opt/ros/humble/share/parameter_traits/cmake)\n'}
+[17.704949] (-) TimerEvent: {}
+[17.805862] (-) TimerEvent: {}
+[17.906626] (-) TimerEvent: {}
+[18.007489] (-) TimerEvent: {}
+[18.108235] (-) TimerEvent: {}
+[18.209031] (-) TimerEvent: {}
+[18.309978] (-) TimerEvent: {}
+[18.410837] (-) TimerEvent: {}
+[18.511678] (-) TimerEvent: {}
+[18.612453] (-) TimerEvent: {}
+[18.713246] (-) TimerEvent: {}
+[18.814124] (-) TimerEvent: {}
+[18.914913] (-) TimerEvent: {}
+[19.015810] (-) TimerEvent: {}
+[19.117423] (-) TimerEvent: {}
+[19.218601] (-) TimerEvent: {}
+[19.319377] (-) TimerEvent: {}
+[19.404393] (my_robot) StdoutLine: {'line': b'-- Found joint_state_broadcaster: 2.35.0 (/opt/ros/humble/share/joint_state_broadcaster/cmake)\n'}
+[19.419660] (-) TimerEvent: {}
+[19.520475] (-) TimerEvent: {}
+[19.621496] (-) TimerEvent: {}
+[19.722396] (-) TimerEvent: {}
+[19.823228] (-) TimerEvent: {}
+[19.924084] (-) TimerEvent: {}
+[20.024912] (-) TimerEvent: {}
+[20.125685] (-) TimerEvent: {}
+[20.167341] (my_robot) StdoutLine: {'line': b'-- Found ros2_control: 2.41.0 (/opt/ros/humble/share/ros2_control/cmake)\n'}
+[20.199245] (my_robot) StdoutLine: {'line': b'-- Found ros2_control_test_assets: 2.41.0 (/opt/ros/humble/share/ros2_control_test_assets/cmake)\n'}
+[20.225876] (-) TimerEvent: {}
+[20.326878] (-) TimerEvent: {}
+[20.427757] (-) TimerEvent: {}
+[20.528635] (-) TimerEvent: {}
+[20.629589] (-) TimerEvent: {}
+[20.730500] (-) TimerEvent: {}
+[20.831390] (-) TimerEvent: {}
+[20.932340] (-) TimerEvent: {}
+[21.033199] (-) TimerEvent: {}
+[21.134151] (-) TimerEvent: {}
+[21.235121] (-) TimerEvent: {}
+[21.336189] (-) TimerEvent: {}
+[21.437198] (-) TimerEvent: {}
+[21.538150] (-) TimerEvent: {}
+[21.639167] (-) TimerEvent: {}
+[21.739966] (-) TimerEvent: {}
+[21.840774] (-) TimerEvent: {}
+[21.941533] (-) TimerEvent: {}
+[22.042385] (-) TimerEvent: {}
+[22.068177] (my_robot) StdoutLine: {'line': b'-- Configuring done\n'}
+[22.142633] (-) TimerEvent: {}
+[22.243467] (-) TimerEvent: {}
+[22.344417] (-) TimerEvent: {}
+[22.363570] (my_robot) StdoutLine: {'line': b'-- Generating done\n'}
+[22.373760] (my_robot) StdoutLine: {'line': b'-- Build files have been written to: /home/pi/final_ws/src/build/my_robot\n'}
+[22.421910] (my_robot) CommandEnded: {'returncode': 0}
+[22.424076] (my_robot) JobProgress: {'identifier': 'my_robot', 'progress': 'build'}
+[22.427526] (my_robot) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/pi/final_ws/src/build/my_robot', '--', '-j4', '-l4'], 'cwd': '/home/pi/final_ws/src/build/my_robot', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pi'), ('SSH_CLIENT', 'fe80::14e7:5825:687f:85ed%wlan0 58344 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/pi/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/pi/final_ws/install/my_robot/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/pi/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/pi'), ('TERM_PROGRAM_VERSION', '1.85.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-9652ac9a-e855-4e60-a15d-8018360e432d.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/pi/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/pi/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/pi/final_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'pi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/pi/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/bin/remote-cli:/home/pi/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-3ce925e8f7.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/pi/final_ws/install/yolo:/home/pi/final_ws/install/slam_ultrasonic:/home/pi/final_ws/install/pi_camera:/home/pi/final_ws/install/my_robot:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/pi/final_ws/src/build/my_robot'), ('SSH_CONNECTION', 'fe80::14e7:5825:687f:85ed%wlan0 58344 fe80::e65f:1ff:feef:508a%wlan0 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/pi/final_ws/install/pi_camera/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/pi/final_ws/install/yolo:/home/pi/final_ws/install/slam_ultrasonic:/home/pi/final_ws/install/my_robot:/home/pi/final_ws/install/pi_camera:/opt/ros/humble')]), 'shell': False}
+[22.444603] (-) TimerEvent: {}
+[22.545540] (-) TimerEvent: {}
+[22.646629] (-) TimerEvent: {}
+[22.660064] (my_robot) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/my_robot_hardware.dir/hardware/src/my_robot_hardware.cpp.o\x1b[0m\n'}
+[22.746788] (-) TimerEvent: {}
+[22.847588] (-) TimerEvent: {}
+[22.948380] (-) TimerEvent: {}
+[23.049230] (-) TimerEvent: {}
+[23.149972] (-) TimerEvent: {}
+[23.250803] (-) TimerEvent: {}
+[23.351612] (-) TimerEvent: {}
+[23.452417] (-) TimerEvent: {}
+[23.553221] (-) TimerEvent: {}
+[23.654029] (-) TimerEvent: {}
+[23.754767] (-) TimerEvent: {}
+[23.855570] (-) TimerEvent: {}
+[23.956337] (-) TimerEvent: {}
+[24.057138] (-) TimerEvent: {}
+[24.158090] (-) TimerEvent: {}
+[24.258926] (-) TimerEvent: {}
+[24.359717] (-) TimerEvent: {}
+[24.460761] (-) TimerEvent: {}
+[24.561565] (-) TimerEvent: {}
+[24.662612] (-) TimerEvent: {}
+[24.763353] (-) TimerEvent: {}
+[24.864221] (-) TimerEvent: {}
+[24.965036] (-) TimerEvent: {}
+[25.065782] (-) TimerEvent: {}
+[25.166587] (-) TimerEvent: {}
+[25.268193] (-) TimerEvent: {}
+[25.369088] (-) TimerEvent: {}
+[25.470065] (-) TimerEvent: {}
+[25.570949] (-) TimerEvent: {}
+[25.671841] (-) TimerEvent: {}
+[25.772761] (-) TimerEvent: {}
+[25.873837] (-) TimerEvent: {}
+[25.974774] (-) TimerEvent: {}
+[26.075660] (-) TimerEvent: {}
+[26.176508] (-) TimerEvent: {}
+[26.277380] (-) TimerEvent: {}
+[26.378291] (-) TimerEvent: {}
+[26.479219] (-) TimerEvent: {}
+[26.580175] (-) TimerEvent: {}
+[26.681246] (-) TimerEvent: {}
+[26.782139] (-) TimerEvent: {}
+[26.883114] (-) TimerEvent: {}
+[26.983975] (-) TimerEvent: {}
+[27.085123] (-) TimerEvent: {}
+[27.186050] (-) TimerEvent: {}
+[27.286845] (-) TimerEvent: {}
+[27.387785] (-) TimerEvent: {}
+[27.488711] (-) TimerEvent: {}
+[27.589745] (-) TimerEvent: {}
+[27.690785] (-) TimerEvent: {}
+[27.791761] (-) TimerEvent: {}
+[27.892601] (-) TimerEvent: {}
+[27.993628] (-) TimerEvent: {}
+[28.094670] (-) TimerEvent: {}
+[28.195600] (-) TimerEvent: {}
+[28.297070] (-) TimerEvent: {}
+[28.397985] (-) TimerEvent: {}
+[28.498916] (-) TimerEvent: {}
+[28.599813] (-) TimerEvent: {}
+[28.700777] (-) TimerEvent: {}
+[28.801814] (-) TimerEvent: {}
+[28.902808] (-) TimerEvent: {}
+[29.003706] (-) TimerEvent: {}
+[29.104843] (-) TimerEvent: {}
+[29.206311] (-) TimerEvent: {}
+[29.307215] (-) TimerEvent: {}
+[29.408293] (-) TimerEvent: {}
+[29.509260] (-) TimerEvent: {}
+[29.610330] (-) TimerEvent: {}
+[29.711675] (-) TimerEvent: {}
+[29.812596] (-) TimerEvent: {}
+[29.919069] (-) TimerEvent: {}
+[30.020527] (-) TimerEvent: {}
+[30.121410] (-) TimerEvent: {}
+[30.222322] (-) TimerEvent: {}
+[30.323312] (-) TimerEvent: {}
+[30.424177] (-) TimerEvent: {}
+[30.525086] (-) TimerEvent: {}
+[30.626005] (-) TimerEvent: {}
+[30.726935] (-) TimerEvent: {}
+[30.827749] (-) TimerEvent: {}
+[30.928708] (-) TimerEvent: {}
+[31.029645] (-) TimerEvent: {}
+[31.130592] (-) TimerEvent: {}
+[31.231430] (-) TimerEvent: {}
+[31.332313] (-) TimerEvent: {}
+[31.433272] (-) TimerEvent: {}
+[31.534444] (-) TimerEvent: {}
+[31.635393] (-) TimerEvent: {}
+[31.736299] (-) TimerEvent: {}
+[31.837191] (-) TimerEvent: {}
+[31.938228] (-) TimerEvent: {}
+[32.039207] (-) TimerEvent: {}
+[32.140131] (-) TimerEvent: {}
+[32.241172] (-) TimerEvent: {}
+[32.342331] (-) TimerEvent: {}
+[32.443225] (-) TimerEvent: {}
+[32.544061] (-) TimerEvent: {}
+[32.644918] (-) TimerEvent: {}
+[32.746024] (-) TimerEvent: {}
+[32.847242] (-) TimerEvent: {}
+[32.948473] (-) TimerEvent: {}
+[33.049428] (-) TimerEvent: {}
+[33.150309] (-) TimerEvent: {}
+[33.251276] (-) TimerEvent: {}
+[33.352531] (-) TimerEvent: {}
+[33.453449] (-) TimerEvent: {}
+[33.554289] (-) TimerEvent: {}
+[33.655261] (-) TimerEvent: {}
+[33.756163] (-) TimerEvent: {}
+[33.857078] (-) TimerEvent: {}
+[33.957995] (-) TimerEvent: {}
+[34.058978] (-) TimerEvent: {}
+[34.159980] (-) TimerEvent: {}
+[34.262220] (-) TimerEvent: {}
+[34.363285] (-) TimerEvent: {}
+[34.464189] (-) TimerEvent: {}
+[34.565097] (-) TimerEvent: {}
+[34.666018] (-) TimerEvent: {}
+[34.771453] (-) TimerEvent: {}
+[34.872445] (-) TimerEvent: {}
+[34.973485] (-) TimerEvent: {}
+[35.074556] (-) TimerEvent: {}
+[35.175447] (-) TimerEvent: {}
+[35.276366] (-) TimerEvent: {}
+[35.378300] (-) TimerEvent: {}
+[35.479307] (-) TimerEvent: {}
+[35.580341] (-) TimerEvent: {}
+[35.681488] (-) TimerEvent: {}
+[35.782344] (-) TimerEvent: {}
+[35.883430] (-) TimerEvent: {}
+[35.984406] (-) TimerEvent: {}
+[36.085253] (-) TimerEvent: {}
+[36.186283] (-) TimerEvent: {}
+[36.287253] (-) TimerEvent: {}
+[36.388146] (-) TimerEvent: {}
+[36.489138] (-) TimerEvent: {}
+[36.590559] (-) TimerEvent: {}
+[36.691423] (-) TimerEvent: {}
+[36.792331] (-) TimerEvent: {}
+[36.893333] (-) TimerEvent: {}
+[36.994270] (-) TimerEvent: {}
+[37.095207] (-) TimerEvent: {}
+[37.196100] (-) TimerEvent: {}
+[37.297132] (-) TimerEvent: {}
+[37.398064] (-) TimerEvent: {}
+[37.499157] (-) TimerEvent: {}
+[37.600042] (-) TimerEvent: {}
+[37.701087] (-) TimerEvent: {}
+[37.802062] (-) TimerEvent: {}
+[37.902973] (-) TimerEvent: {}
+[38.003846] (-) TimerEvent: {}
+[38.104736] (-) TimerEvent: {}
+[38.157740] (my_robot) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libmy_robot_hardware.so\x1b[0m\n'}
+[38.204942] (-) TimerEvent: {}
+[38.305831] (-) TimerEvent: {}
+[38.407175] (-) TimerEvent: {}
+[38.508530] (-) TimerEvent: {}
+[38.609897] (-) TimerEvent: {}
+[38.711058] (-) TimerEvent: {}
+[38.812187] (-) TimerEvent: {}
+[38.913687] (-) TimerEvent: {}
+[39.014656] (-) TimerEvent: {}
+[39.116054] (-) TimerEvent: {}
+[39.217536] (-) TimerEvent: {}
+[39.318992] (-) TimerEvent: {}
+[39.419905] (-) TimerEvent: {}
+[39.520871] (-) TimerEvent: {}
+[39.538685] (my_robot) StdoutLine: {'line': b'[100%] Built target my_robot_hardware\n'}
+[39.580669] (my_robot) CommandEnded: {'returncode': 0}
+[39.621151] (-) TimerEvent: {}
+[39.718739] (my_robot) JobProgress: {'identifier': 'my_robot', 'progress': 'install'}
+[39.723195] (my_robot) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/pi/final_ws/src/build/my_robot'], 'cwd': '/home/pi/final_ws/src/build/my_robot', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pi'), ('SSH_CLIENT', 'fe80::14e7:5825:687f:85ed%wlan0 58344 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/pi/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/pi/final_ws/install/my_robot/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/pi/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/pi'), ('TERM_PROGRAM_VERSION', '1.85.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-9652ac9a-e855-4e60-a15d-8018360e432d.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/pi/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/pi/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/pi/final_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'pi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/pi/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/bin/remote-cli:/home/pi/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-3ce925e8f7.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/pi/final_ws/install/yolo:/home/pi/final_ws/install/slam_ultrasonic:/home/pi/final_ws/install/pi_camera:/home/pi/final_ws/install/my_robot:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/pi/final_ws/src/build/my_robot'), ('SSH_CONNECTION', 'fe80::14e7:5825:687f:85ed%wlan0 58344 fe80::e65f:1ff:feef:508a%wlan0 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/pi/final_ws/install/pi_camera/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/pi/final_ws/install/yolo:/home/pi/final_ws/install/slam_ultrasonic:/home/pi/final_ws/install/my_robot:/home/pi/final_ws/install/pi_camera:/opt/ros/humble')]), 'shell': False}
+[39.729477] (-) TimerEvent: {}
+[39.756199] (my_robot) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[39.757779] (my_robot) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/my_robot/share/my_robot/my_robot_hardware.xml\n'}
+[39.761419] (my_robot) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/my_robot/lib/libmy_robot_hardware.so\n'}
+[39.770950] (my_robot) StdoutLine: {'line': b'-- Set runtime path of "/home/pi/final_ws/src/install/my_robot/lib/libmy_robot_hardware.so" to ""\n'}
+[39.771894] (my_robot) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/my_robot/share/my_robot//bringup\n'}
+[39.773080] (my_robot) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/my_robot/share/my_robot//bringup/config\n'}
+[39.773685] (my_robot) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/my_robot/share/my_robot//bringup/config/my_robot_controllers.yaml\n'}
+[39.776361] (my_robot) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/my_robot/share/my_robot//bringup/launch\n'}
+[39.777153] (my_robot) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/my_robot/share/my_robot//bringup/launch/rsp.launch.py\n'}
+[39.778591] (my_robot) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/my_robot/share/my_robot//bringup/launch/my_robot.launch.py\n'}
+[39.780465] (my_robot) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/my_robot/share/my_robot//description\n'}
+[39.781247] (my_robot) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/my_robot/share/my_robot//description/urdf\n'}
+[39.781822] (my_robot) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/my_robot/share/my_robot//description/urdf/my_robot.urdf.xacro\n'}
+[39.782830] (my_robot) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/my_robot/share/my_robot//description/urdf/ultrasonic.xacro\n'}
+[39.784515] (my_robot) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/my_robot/share/my_robot//description/urdf/common_properties.xacro\n'}
+[39.786391] (my_robot) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/my_robot/share/my_robot//description/urdf/camera.xacro\n'}
+[39.788174] (my_robot) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/my_robot/share/my_robot//description/ros_control\n'}
+[39.788873] (my_robot) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/my_robot/share/my_robot//description/ros_control/my_robot_control.xacro\n'}
+[39.790982] (my_robot) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/my_robot/share/my_robot//description/launch\n'}
+[39.791854] (my_robot) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/my_robot/share/my_robot//hardware\n'}
+[39.792391] (my_robot) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/my_robot/share/my_robot//hardware/src\n'}
+[39.792933] (my_robot) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/my_robot/share/my_robot//hardware/src/my_robot_hardware.cpp\n'}
+[39.794409] (my_robot) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/my_robot/share/my_robot//hardware/include\n'}
+[39.795181] (my_robot) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/my_robot/share/my_robot//hardware/include/my_robot\n'}
+[39.795810] (my_robot) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/my_robot/share/my_robot//hardware/include/my_robot/my_robot_hardware.hpp\n'}
+[39.797646] (my_robot) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/my_robot/share/ament_index/resource_index/package_run_dependencies/my_robot\n'}
+[39.799368] (my_robot) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/my_robot/share/ament_index/resource_index/parent_prefix_path/my_robot\n'}
+[39.800962] (my_robot) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/my_robot/share/my_robot/environment/ament_prefix_path.sh\n'}
+[39.802168] (my_robot) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/my_robot/share/my_robot/environment/ament_prefix_path.dsv\n'}
+[39.803560] (my_robot) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/my_robot/share/my_robot/environment/path.sh\n'}
+[39.804810] (my_robot) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/my_robot/share/my_robot/environment/path.dsv\n'}
+[39.806025] (my_robot) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/my_robot/share/my_robot/local_setup.bash\n'}
+[39.807212] (my_robot) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/my_robot/share/my_robot/local_setup.sh\n'}
+[39.808317] (my_robot) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/my_robot/share/my_robot/local_setup.zsh\n'}
+[39.809477] (my_robot) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/my_robot/share/my_robot/local_setup.dsv\n'}
+[39.810620] (my_robot) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/my_robot/share/my_robot/package.dsv\n'}
+[39.812074] (my_robot) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/my_robot/share/ament_index/resource_index/packages/my_robot\n'}
+[39.813713] (my_robot) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/my_robot/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/my_robot\n'}
+[39.815427] (my_robot) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/my_robot/share/my_robot/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[39.816670] (my_robot) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/my_robot/share/my_robot/cmake/my_robotConfig.cmake\n'}
+[39.817672] (my_robot) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/my_robot/share/my_robot/cmake/my_robotConfig-version.cmake\n'}
+[39.819160] (my_robot) StdoutLine: {'line': b'-- Installing: /home/pi/final_ws/src/install/my_robot/share/my_robot/package.xml\n'}
+[39.824969] (my_robot) CommandEnded: {'returncode': 0}
+[39.829597] (-) TimerEvent: {}
+[39.930294] (-) TimerEvent: {}
+[40.031259] (-) TimerEvent: {}
+[40.043935] (my_robot) JobEnded: {'identifier': 'my_robot', 'rc': 0}
+[40.049306] (-) EventReactorShutdown: {}

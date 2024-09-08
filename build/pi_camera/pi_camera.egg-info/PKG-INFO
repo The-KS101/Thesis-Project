@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pi-camera
+Version: 0.0.0
+Summary: Simple ROS2 package to publish PI camera frames.
+Home-page: UNKNOWN
+Maintainer: Rafael Papallas
+Maintainer-email: rpapallas@gmail.com
+License: Apache License 2.0
+Platform: UNKNOWN
+License-File: LICENSE
+
+UNKNOWN
+

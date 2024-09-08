@@ -1,0 +1,91 @@
+[0.172s] Invoking command in '/home/pi/final_ws/src/build/my_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/final_ws/install/pi_camera:/opt/ros/humble /usr/bin/cmake /home/pi/final_ws/src/my_robot -DCMAKE_INSTALL_PREFIX=/home/pi/final_ws/src/install/my_robot
+[2.007s] -- The C compiler identification is GNU 11.4.0
+[2.008s] -- The CXX compiler identification is GNU 11.4.0
+[2.008s] -- Detecting C compiler ABI info
+[2.157s] -- Detecting C compiler ABI info - done
+[2.226s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.231s] -- Detecting C compile features
+[2.235s] -- Detecting C compile features - done
+[2.266s] -- Detecting CXX compiler ABI info
+[3.026s] -- Detecting CXX compiler ABI info - done
+[3.116s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.120s] -- Detecting CXX compile features
+[3.125s] -- Detecting CXX compile features - done
+[3.201s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[5.195s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[6.518s] -- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)
+[7.445s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[7.535s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[7.658s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[7.847s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[8.084s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[8.941s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[8.991s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[10.128s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[10.435s] -- Found FastRTPS: /opt/ros/humble/include  
+[10.931s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[11.065s] -- Looking for pthread.h
+[11.425s] -- Looking for pthread.h - found
+[11.427s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[11.835s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[11.839s] -- Found Threads: TRUE  
+[12.715s] -- Found hardware_interface: 2.41.0 (/opt/ros/humble/share/hardware_interface/cmake)
+[15.611s] -- Found controller_manager: 2.41.0 (/opt/ros/humble/share/controller_manager/cmake)
+[17.345s] -- Found diff_drive_controller: 2.35.0 (/opt/ros/humble/share/diff_drive_controller/cmake)
+[17.698s] -- Found parameter_traits: 0.3.8 (/opt/ros/humble/share/parameter_traits/cmake)
+[19.401s] -- Found joint_state_broadcaster: 2.35.0 (/opt/ros/humble/share/joint_state_broadcaster/cmake)
+[20.164s] -- Found ros2_control: 2.41.0 (/opt/ros/humble/share/ros2_control/cmake)
+[20.196s] -- Found ros2_control_test_assets: 2.41.0 (/opt/ros/humble/share/ros2_control_test_assets/cmake)
+[22.065s] -- Configuring done
+[22.360s] -- Generating done
+[22.370s] -- Build files have been written to: /home/pi/final_ws/src/build/my_robot
+[22.419s] Invoked command in '/home/pi/final_ws/src/build/my_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/final_ws/install/pi_camera:/opt/ros/humble /usr/bin/cmake /home/pi/final_ws/src/my_robot -DCMAKE_INSTALL_PREFIX=/home/pi/final_ws/src/install/my_robot
+[22.427s] Invoking command in '/home/pi/final_ws/src/build/my_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/final_ws/install/pi_camera:/opt/ros/humble /usr/bin/cmake --build /home/pi/final_ws/src/build/my_robot -- -j4 -l4
+[22.657s] [ 50%] [32mBuilding CXX object CMakeFiles/my_robot_hardware.dir/hardware/src/my_robot_hardware.cpp.o[0m
+[38.154s] [100%] [32m[1mLinking CXX shared library libmy_robot_hardware.so[0m
+[39.535s] [100%] Built target my_robot_hardware
+[39.577s] Invoked command in '/home/pi/final_ws/src/build/my_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/final_ws/install/pi_camera:/opt/ros/humble /usr/bin/cmake --build /home/pi/final_ws/src/build/my_robot -- -j4 -l4
+[39.724s] Invoking command in '/home/pi/final_ws/src/build/my_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/final_ws/install/pi_camera:/opt/ros/humble /usr/bin/cmake --install /home/pi/final_ws/src/build/my_robot
+[39.753s] -- Install configuration: ""
+[39.754s] -- Installing: /home/pi/final_ws/src/install/my_robot/share/my_robot/my_robot_hardware.xml
+[39.758s] -- Installing: /home/pi/final_ws/src/install/my_robot/lib/libmy_robot_hardware.so
+[39.767s] -- Set runtime path of "/home/pi/final_ws/src/install/my_robot/lib/libmy_robot_hardware.so" to ""
+[39.768s] -- Installing: /home/pi/final_ws/src/install/my_robot/share/my_robot//bringup
+[39.769s] -- Installing: /home/pi/final_ws/src/install/my_robot/share/my_robot//bringup/config
+[39.770s] -- Installing: /home/pi/final_ws/src/install/my_robot/share/my_robot//bringup/config/my_robot_controllers.yaml
+[39.773s] -- Installing: /home/pi/final_ws/src/install/my_robot/share/my_robot//bringup/launch
+[39.773s] -- Installing: /home/pi/final_ws/src/install/my_robot/share/my_robot//bringup/launch/rsp.launch.py
+[39.775s] -- Installing: /home/pi/final_ws/src/install/my_robot/share/my_robot//bringup/launch/my_robot.launch.py
+[39.777s] -- Installing: /home/pi/final_ws/src/install/my_robot/share/my_robot//description
+[39.778s] -- Installing: /home/pi/final_ws/src/install/my_robot/share/my_robot//description/urdf
+[39.778s] -- Installing: /home/pi/final_ws/src/install/my_robot/share/my_robot//description/urdf/my_robot.urdf.xacro
+[39.779s] -- Installing: /home/pi/final_ws/src/install/my_robot/share/my_robot//description/urdf/ultrasonic.xacro
+[39.781s] -- Installing: /home/pi/final_ws/src/install/my_robot/share/my_robot//description/urdf/common_properties.xacro
+[39.783s] -- Installing: /home/pi/final_ws/src/install/my_robot/share/my_robot//description/urdf/camera.xacro
+[39.784s] -- Installing: /home/pi/final_ws/src/install/my_robot/share/my_robot//description/ros_control
+[39.785s] -- Installing: /home/pi/final_ws/src/install/my_robot/share/my_robot//description/ros_control/my_robot_control.xacro
+[39.788s] -- Installing: /home/pi/final_ws/src/install/my_robot/share/my_robot//description/launch
+[39.788s] -- Installing: /home/pi/final_ws/src/install/my_robot/share/my_robot//hardware
+[39.789s] -- Installing: /home/pi/final_ws/src/install/my_robot/share/my_robot//hardware/src
+[39.789s] -- Installing: /home/pi/final_ws/src/install/my_robot/share/my_robot//hardware/src/my_robot_hardware.cpp
+[39.791s] -- Installing: /home/pi/final_ws/src/install/my_robot/share/my_robot//hardware/include
+[39.791s] -- Installing: /home/pi/final_ws/src/install/my_robot/share/my_robot//hardware/include/my_robot
+[39.792s] -- Installing: /home/pi/final_ws/src/install/my_robot/share/my_robot//hardware/include/my_robot/my_robot_hardware.hpp
+[39.794s] -- Installing: /home/pi/final_ws/src/install/my_robot/share/ament_index/resource_index/package_run_dependencies/my_robot
+[39.796s] -- Installing: /home/pi/final_ws/src/install/my_robot/share/ament_index/resource_index/parent_prefix_path/my_robot
+[39.797s] -- Installing: /home/pi/final_ws/src/install/my_robot/share/my_robot/environment/ament_prefix_path.sh
+[39.798s] -- Installing: /home/pi/final_ws/src/install/my_robot/share/my_robot/environment/ament_prefix_path.dsv
+[39.800s] -- Installing: /home/pi/final_ws/src/install/my_robot/share/my_robot/environment/path.sh
+[39.801s] -- Installing: /home/pi/final_ws/src/install/my_robot/share/my_robot/environment/path.dsv
+[39.802s] -- Installing: /home/pi/final_ws/src/install/my_robot/share/my_robot/local_setup.bash
+[39.803s] -- Installing: /home/pi/final_ws/src/install/my_robot/share/my_robot/local_setup.sh
+[39.805s] -- Installing: /home/pi/final_ws/src/install/my_robot/share/my_robot/local_setup.zsh
+[39.806s] -- Installing: /home/pi/final_ws/src/install/my_robot/share/my_robot/local_setup.dsv
+[39.807s] -- Installing: /home/pi/final_ws/src/install/my_robot/share/my_robot/package.dsv
+[39.808s] -- Installing: /home/pi/final_ws/src/install/my_robot/share/ament_index/resource_index/packages/my_robot
+[39.810s] -- Installing: /home/pi/final_ws/src/install/my_robot/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/my_robot
+[39.812s] -- Installing: /home/pi/final_ws/src/install/my_robot/share/my_robot/cmake/ament_cmake_export_dependencies-extras.cmake
+[39.813s] -- Installing: /home/pi/final_ws/src/install/my_robot/share/my_robot/cmake/my_robotConfig.cmake
+[39.814s] -- Installing: /home/pi/final_ws/src/install/my_robot/share/my_robot/cmake/my_robotConfig-version.cmake
+[39.815s] -- Installing: /home/pi/final_ws/src/install/my_robot/share/my_robot/package.xml
+[39.823s] Invoked command in '/home/pi/final_ws/src/build/my_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/final_ws/install/pi_camera:/opt/ros/humble /usr/bin/cmake --install /home/pi/final_ws/src/build/my_robot

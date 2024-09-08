@@ -1,0 +1,9 @@
+/home/pi/final_ws/build/yolo/CMakeFiles/uninstall.dir
+/home/pi/final_ws/build/yolo/CMakeFiles/yolo_uninstall.dir
+/home/pi/final_ws/build/yolo/CMakeFiles/test.dir
+/home/pi/final_ws/build/yolo/CMakeFiles/edit_cache.dir
+/home/pi/final_ws/build/yolo/CMakeFiles/rebuild_cache.dir
+/home/pi/final_ws/build/yolo/CMakeFiles/list_install_components.dir
+/home/pi/final_ws/build/yolo/CMakeFiles/install.dir
+/home/pi/final_ws/build/yolo/CMakeFiles/install/local.dir
+/home/pi/final_ws/build/yolo/CMakeFiles/install/strip.dir

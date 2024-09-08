@@ -1,0 +1,4 @@
+[console_scripts]
+publish_compressed = pi_camera.publish_compressed:main
+view_compressed = pi_camera.view_compressed:main
+

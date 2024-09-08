@@ -1,0 +1,73 @@
+[1.909s] Invoking command in '/home/pi/final_ws/src/build/slam_ultrasonic': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/final_ws/install/pi_camera:/opt/ros/humble /usr/bin/cmake /home/pi/final_ws/src/slam_ultrasonic -DCMAKE_INSTALL_PREFIX=/home/pi/final_ws/src/install/slam_ultrasonic
+[2.425s] -- The C compiler identification is GNU 11.4.0
+[3.050s] -- The CXX compiler identification is GNU 11.4.0
+[3.153s] -- Detecting C compiler ABI info
+[4.108s] -- Detecting C compiler ABI info - done
+[4.240s] -- Check for working C compiler: /usr/bin/cc - skipped
+[4.265s] -- Detecting C compile features
+[4.269s] -- Detecting C compile features - done
+[4.327s] -- Detecting CXX compiler ABI info
+[5.275s] -- Detecting CXX compiler ABI info - done
+[5.330s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[5.333s] -- Detecting CXX compile features
+[5.338s] -- Detecting CXX compile features - done
+[5.388s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[6.615s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[7.611s] -- Found rclpy: 3.3.13 (/opt/ros/humble/share/rclpy/cmake)
+[8.204s] -- Configuring done
+[8.307s] -- Generating done
+[8.351s] -- Build files have been written to: /home/pi/final_ws/src/build/slam_ultrasonic
+[8.380s] Invoked command in '/home/pi/final_ws/src/build/slam_ultrasonic' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/final_ws/install/pi_camera:/opt/ros/humble /usr/bin/cmake /home/pi/final_ws/src/slam_ultrasonic -DCMAKE_INSTALL_PREFIX=/home/pi/final_ws/src/install/slam_ultrasonic
+[8.382s] Invoking command in '/home/pi/final_ws/src/build/slam_ultrasonic': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/final_ws/install/pi_camera:/opt/ros/humble /usr/bin/cmake --build /home/pi/final_ws/src/build/slam_ultrasonic -- -j4 -l4
+[8.583s] Invoked command in '/home/pi/final_ws/src/build/slam_ultrasonic' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/final_ws/install/pi_camera:/opt/ros/humble /usr/bin/cmake --build /home/pi/final_ws/src/build/slam_ultrasonic -- -j4 -l4
+[8.885s] Invoking command in '/home/pi/final_ws/src/build/slam_ultrasonic': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/final_ws/install/pi_camera:/opt/ros/humble /usr/bin/cmake --install /home/pi/final_ws/src/build/slam_ultrasonic
+[8.937s] -- Install configuration: ""
+[8.949s] -- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/lib/slam_ultrasonic/src
+[8.955s] -- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/lib/slam_ultrasonic/src/servo_node.py
+[8.961s] -- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/lib/slam_ultrasonic/src/ultrasonic_node.py
+[8.991s] -- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/lib/slam_ultrasonic/src/cmd_vel_to_joints.py
+[8.998s] -- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/lib/slam_ultrasonic/launch
+[9.002s] -- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/lib/slam_ultrasonic/launch/localization_launch.py
+[9.007s] -- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/lib/slam_ultrasonic/launch/camera.launch.py
+[9.014s] -- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/lib/slam_ultrasonic/launch/map_base_launch.py
+[9.019s] -- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/lib/slam_ultrasonic/launch/online_async_launch.py
+[9.024s] -- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/lib/slam_ultrasonic/launch/navigation_launch.py
+[9.031s] -- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/lib/slam_ultrasonic/launch/slam_launch.py
+[9.035s] -- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/lib/slam_ultrasonic/config
+[9.040s] -- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/lib/slam_ultrasonic/config/nav2_params.yaml
+[9.047s] -- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/lib/slam_ultrasonic/config/twist_mux.yaml
+[9.052s] -- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/lib/slam_ultrasonic/config/mapper_params_online_async.yaml
+[9.059s] -- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic//launch
+[9.062s] -- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic//launch/localization_launch.py
+[9.066s] -- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic//launch/camera.launch.py
+[9.072s] -- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic//launch/map_base_launch.py
+[9.075s] -- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic//launch/online_async_launch.py
+[9.081s] -- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic//launch/navigation_launch.py
+[9.085s] -- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic//launch/slam_launch.py
+[9.091s] -- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic//src
+[9.094s] -- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic//src/servo_node.py
+[9.101s] -- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic//src/ultrasonic_node.py
+[9.105s] -- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic//src/cmd_vel_to_joints.py
+[9.110s] -- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic//config
+[9.116s] -- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic//config/nav2_params.yaml
+[9.122s] -- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic//config/twist_mux.yaml
+[9.131s] -- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic//config/mapper_params_online_async.yaml
+[9.143s] -- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/lib/slam_ultrasonic/servo_node.py
+[9.144s] -- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/lib/slam_ultrasonic/ultrasonic_node.py
+[9.145s] -- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/lib/slam_ultrasonic/cmd_vel_to_joints.py
+[9.158s] -- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/ament_index/resource_index/package_run_dependencies/slam_ultrasonic
+[9.159s] -- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/ament_index/resource_index/parent_prefix_path/slam_ultrasonic
+[9.164s] -- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic/environment/ament_prefix_path.sh
+[9.165s] -- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic/environment/ament_prefix_path.dsv
+[9.165s] -- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic/environment/path.sh
+[9.175s] -- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic/environment/path.dsv
+[9.182s] -- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic/local_setup.bash
+[9.187s] -- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic/local_setup.sh
+[9.194s] -- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic/local_setup.zsh
+[9.200s] -- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic/local_setup.dsv
+[9.206s] -- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic/package.dsv
+[9.214s] -- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/ament_index/resource_index/packages/slam_ultrasonic
+[9.219s] -- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic/cmake/slam_ultrasonicConfig.cmake
+[9.236s] -- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic/cmake/slam_ultrasonicConfig-version.cmake
+[9.254s] -- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic/package.xml
+[9.258s] Invoked command in '/home/pi/final_ws/src/build/slam_ultrasonic' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/final_ws/install/pi_camera:/opt/ros/humble /usr/bin/cmake --install /home/pi/final_ws/src/build/slam_ultrasonic

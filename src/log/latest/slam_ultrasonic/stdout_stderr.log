@@ -1,0 +1,67 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Found rclpy: 3.3.13 (/opt/ros/humble/share/rclpy/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/pi/final_ws/src/build/slam_ultrasonic
+-- Install configuration: ""
+-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/lib/slam_ultrasonic/src
+-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/lib/slam_ultrasonic/src/servo_node.py
+-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/lib/slam_ultrasonic/src/ultrasonic_node.py
+-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/lib/slam_ultrasonic/src/cmd_vel_to_joints.py
+-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/lib/slam_ultrasonic/launch
+-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/lib/slam_ultrasonic/launch/localization_launch.py
+-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/lib/slam_ultrasonic/launch/camera.launch.py
+-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/lib/slam_ultrasonic/launch/map_base_launch.py
+-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/lib/slam_ultrasonic/launch/online_async_launch.py
+-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/lib/slam_ultrasonic/launch/navigation_launch.py
+-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/lib/slam_ultrasonic/launch/slam_launch.py
+-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/lib/slam_ultrasonic/config
+-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/lib/slam_ultrasonic/config/nav2_params.yaml
+-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/lib/slam_ultrasonic/config/twist_mux.yaml
+-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/lib/slam_ultrasonic/config/mapper_params_online_async.yaml
+-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic//launch
+-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic//launch/localization_launch.py
+-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic//launch/camera.launch.py
+-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic//launch/map_base_launch.py
+-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic//launch/online_async_launch.py
+-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic//launch/navigation_launch.py
+-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic//launch/slam_launch.py
+-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic//src
+-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic//src/servo_node.py
+-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic//src/ultrasonic_node.py
+-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic//src/cmd_vel_to_joints.py
+-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic//config
+-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic//config/nav2_params.yaml
+-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic//config/twist_mux.yaml
+-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic//config/mapper_params_online_async.yaml
+-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/lib/slam_ultrasonic/servo_node.py
+-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/lib/slam_ultrasonic/ultrasonic_node.py
+-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/lib/slam_ultrasonic/cmd_vel_to_joints.py
+-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/ament_index/resource_index/package_run_dependencies/slam_ultrasonic
+-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/ament_index/resource_index/parent_prefix_path/slam_ultrasonic
+-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic/environment/ament_prefix_path.sh
+-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic/environment/ament_prefix_path.dsv
+-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic/environment/path.sh
+-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic/environment/path.dsv
+-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic/local_setup.bash
+-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic/local_setup.sh
+-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic/local_setup.zsh
+-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic/local_setup.dsv
+-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic/package.dsv
+-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/ament_index/resource_index/packages/slam_ultrasonic
+-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic/cmake/slam_ultrasonicConfig.cmake
+-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic/cmake/slam_ultrasonicConfig-version.cmake
+-- Installing: /home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic/package.xml

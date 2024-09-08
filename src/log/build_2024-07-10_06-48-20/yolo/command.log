@@ -1,0 +1,6 @@
+Invoking command in '/home/pi/final_ws/src/build/yolo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/final_ws/install/pi_camera:/opt/ros/humble /usr/bin/cmake /home/pi/final_ws/src/yolo -DCMAKE_INSTALL_PREFIX=/home/pi/final_ws/src/install/yolo
+Invoked command in '/home/pi/final_ws/src/build/yolo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/final_ws/install/pi_camera:/opt/ros/humble /usr/bin/cmake /home/pi/final_ws/src/yolo -DCMAKE_INSTALL_PREFIX=/home/pi/final_ws/src/install/yolo
+Invoking command in '/home/pi/final_ws/src/build/yolo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/final_ws/install/pi_camera:/opt/ros/humble /usr/bin/cmake --build /home/pi/final_ws/src/build/yolo -- -j4 -l4
+Invoked command in '/home/pi/final_ws/src/build/yolo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/final_ws/install/pi_camera:/opt/ros/humble /usr/bin/cmake --build /home/pi/final_ws/src/build/yolo -- -j4 -l4
+Invoking command in '/home/pi/final_ws/src/build/yolo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/final_ws/install/pi_camera:/opt/ros/humble /usr/bin/cmake --install /home/pi/final_ws/src/build/yolo
+Invoked command in '/home/pi/final_ws/src/build/yolo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/final_ws/install/pi_camera:/opt/ros/humble /usr/bin/cmake --install /home/pi/final_ws/src/build/yolo

@@ -1,0 +1,320 @@
+[0.763s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.764s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xffff82536e90>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff8265f520>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff8265f520>>, mixin_verb=('build',))
+[2.226s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[2.227s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[2.227s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[2.228s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[2.228s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[2.228s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[2.229s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/pi/final_ws/src'
+[2.229s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[2.230s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[2.230s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[2.230s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[2.230s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[2.231s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[2.231s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[2.231s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[2.231s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[2.304s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[2.304s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[2.305s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[2.305s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[2.306s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[2.306s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[2.307s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[2.307s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[2.308s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[2.309s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[2.309s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[2.309s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[2.310s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[2.310s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[2.310s] Level 1:colcon.colcon_core.package_identification:_identify(my_robot) by extensions ['ignore', 'ignore_ament_install']
+[2.311s] Level 1:colcon.colcon_core.package_identification:_identify(my_robot) by extension 'ignore'
+[2.311s] Level 1:colcon.colcon_core.package_identification:_identify(my_robot) by extension 'ignore_ament_install'
+[2.312s] Level 1:colcon.colcon_core.package_identification:_identify(my_robot) by extensions ['colcon_pkg']
+[2.312s] Level 1:colcon.colcon_core.package_identification:_identify(my_robot) by extension 'colcon_pkg'
+[2.312s] Level 1:colcon.colcon_core.package_identification:_identify(my_robot) by extensions ['colcon_meta']
+[2.312s] Level 1:colcon.colcon_core.package_identification:_identify(my_robot) by extension 'colcon_meta'
+[2.312s] Level 1:colcon.colcon_core.package_identification:_identify(my_robot) by extensions ['ros']
+[2.312s] Level 1:colcon.colcon_core.package_identification:_identify(my_robot) by extension 'ros'
+[2.327s] DEBUG:colcon.colcon_core.package_identification:Package 'my_robot' with type 'ros.ament_cmake' and name 'my_robot'
+[2.328s] Level 1:colcon.colcon_core.package_identification:_identify(pi_camera_ros) by extensions ['ignore', 'ignore_ament_install']
+[2.328s] Level 1:colcon.colcon_core.package_identification:_identify(pi_camera_ros) by extension 'ignore'
+[2.328s] Level 1:colcon.colcon_core.package_identification:_identify(pi_camera_ros) by extension 'ignore_ament_install'
+[2.329s] Level 1:colcon.colcon_core.package_identification:_identify(pi_camera_ros) by extensions ['colcon_pkg']
+[2.329s] Level 1:colcon.colcon_core.package_identification:_identify(pi_camera_ros) by extension 'colcon_pkg'
+[2.329s] Level 1:colcon.colcon_core.package_identification:_identify(pi_camera_ros) by extensions ['colcon_meta']
+[2.329s] Level 1:colcon.colcon_core.package_identification:_identify(pi_camera_ros) by extension 'colcon_meta'
+[2.330s] Level 1:colcon.colcon_core.package_identification:_identify(pi_camera_ros) by extensions ['ros']
+[2.330s] Level 1:colcon.colcon_core.package_identification:_identify(pi_camera_ros) by extension 'ros'
+[2.335s] DEBUG:colcon.colcon_core.package_identification:Package 'pi_camera_ros' with type 'ros.ament_python' and name 'pi_camera'
+[2.335s] Level 1:colcon.colcon_core.package_identification:_identify(slam_ultrasonic) by extensions ['ignore', 'ignore_ament_install']
+[2.336s] Level 1:colcon.colcon_core.package_identification:_identify(slam_ultrasonic) by extension 'ignore'
+[2.336s] Level 1:colcon.colcon_core.package_identification:_identify(slam_ultrasonic) by extension 'ignore_ament_install'
+[2.337s] Level 1:colcon.colcon_core.package_identification:_identify(slam_ultrasonic) by extensions ['colcon_pkg']
+[2.337s] Level 1:colcon.colcon_core.package_identification:_identify(slam_ultrasonic) by extension 'colcon_pkg'
+[2.337s] Level 1:colcon.colcon_core.package_identification:_identify(slam_ultrasonic) by extensions ['colcon_meta']
+[2.337s] Level 1:colcon.colcon_core.package_identification:_identify(slam_ultrasonic) by extension 'colcon_meta'
+[2.337s] Level 1:colcon.colcon_core.package_identification:_identify(slam_ultrasonic) by extensions ['ros']
+[2.338s] Level 1:colcon.colcon_core.package_identification:_identify(slam_ultrasonic) by extension 'ros'
+[2.340s] DEBUG:colcon.colcon_core.package_identification:Package 'slam_ultrasonic' with type 'ros.ament_cmake' and name 'slam_ultrasonic'
+[2.341s] Level 1:colcon.colcon_core.package_identification:_identify(yolo) by extensions ['ignore', 'ignore_ament_install']
+[2.342s] Level 1:colcon.colcon_core.package_identification:_identify(yolo) by extension 'ignore'
+[2.342s] Level 1:colcon.colcon_core.package_identification:_identify(yolo) by extension 'ignore_ament_install'
+[2.342s] Level 1:colcon.colcon_core.package_identification:_identify(yolo) by extensions ['colcon_pkg']
+[2.343s] Level 1:colcon.colcon_core.package_identification:_identify(yolo) by extension 'colcon_pkg'
+[2.343s] Level 1:colcon.colcon_core.package_identification:_identify(yolo) by extensions ['colcon_meta']
+[2.343s] Level 1:colcon.colcon_core.package_identification:_identify(yolo) by extension 'colcon_meta'
+[2.343s] Level 1:colcon.colcon_core.package_identification:_identify(yolo) by extensions ['ros']
+[2.343s] Level 1:colcon.colcon_core.package_identification:_identify(yolo) by extension 'ros'
+[2.348s] DEBUG:colcon.colcon_core.package_identification:Package 'yolo' with type 'ros.ament_cmake' and name 'yolo'
+[2.348s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[2.349s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[2.349s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[2.349s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[2.349s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[2.506s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[2.506s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[2.522s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 4 installed packages in /home/pi/final_ws/install
+[2.535s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 363 installed packages in /opt/ros/humble
+[2.543s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[2.761s] Level 5:colcon.colcon_core.verb:set package 'my_robot' build argument 'cmake_args' from command line to 'None'
+[2.761s] Level 5:colcon.colcon_core.verb:set package 'my_robot' build argument 'cmake_target' from command line to 'None'
+[2.762s] Level 5:colcon.colcon_core.verb:set package 'my_robot' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.762s] Level 5:colcon.colcon_core.verb:set package 'my_robot' build argument 'cmake_clean_cache' from command line to 'False'
+[2.762s] Level 5:colcon.colcon_core.verb:set package 'my_robot' build argument 'cmake_clean_first' from command line to 'False'
+[2.762s] Level 5:colcon.colcon_core.verb:set package 'my_robot' build argument 'cmake_force_configure' from command line to 'False'
+[2.762s] Level 5:colcon.colcon_core.verb:set package 'my_robot' build argument 'ament_cmake_args' from command line to 'None'
+[2.762s] Level 5:colcon.colcon_core.verb:set package 'my_robot' build argument 'catkin_cmake_args' from command line to 'None'
+[2.762s] Level 5:colcon.colcon_core.verb:set package 'my_robot' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.762s] DEBUG:colcon.colcon_core.verb:Building package 'my_robot' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/pi/final_ws/src/build/my_robot', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/pi/final_ws/src/install/my_robot', 'merge_install': False, 'path': '/home/pi/final_ws/src/my_robot', 'symlink_install': False, 'test_result_base': None}
+[2.764s] Level 5:colcon.colcon_core.verb:set package 'pi_camera' build argument 'cmake_args' from command line to 'None'
+[2.764s] Level 5:colcon.colcon_core.verb:set package 'pi_camera' build argument 'cmake_target' from command line to 'None'
+[2.764s] Level 5:colcon.colcon_core.verb:set package 'pi_camera' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.764s] Level 5:colcon.colcon_core.verb:set package 'pi_camera' build argument 'cmake_clean_cache' from command line to 'False'
+[2.765s] Level 5:colcon.colcon_core.verb:set package 'pi_camera' build argument 'cmake_clean_first' from command line to 'False'
+[2.765s] Level 5:colcon.colcon_core.verb:set package 'pi_camera' build argument 'cmake_force_configure' from command line to 'False'
+[2.765s] Level 5:colcon.colcon_core.verb:set package 'pi_camera' build argument 'ament_cmake_args' from command line to 'None'
+[2.765s] Level 5:colcon.colcon_core.verb:set package 'pi_camera' build argument 'catkin_cmake_args' from command line to 'None'
+[2.765s] Level 5:colcon.colcon_core.verb:set package 'pi_camera' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.765s] DEBUG:colcon.colcon_core.verb:Building package 'pi_camera' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/pi/final_ws/src/build/pi_camera', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/pi/final_ws/src/install/pi_camera', 'merge_install': False, 'path': '/home/pi/final_ws/src/pi_camera_ros', 'symlink_install': False, 'test_result_base': None}
+[2.767s] Level 5:colcon.colcon_core.verb:set package 'slam_ultrasonic' build argument 'cmake_args' from command line to 'None'
+[2.767s] Level 5:colcon.colcon_core.verb:set package 'slam_ultrasonic' build argument 'cmake_target' from command line to 'None'
+[2.767s] Level 5:colcon.colcon_core.verb:set package 'slam_ultrasonic' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.767s] Level 5:colcon.colcon_core.verb:set package 'slam_ultrasonic' build argument 'cmake_clean_cache' from command line to 'False'
+[2.767s] Level 5:colcon.colcon_core.verb:set package 'slam_ultrasonic' build argument 'cmake_clean_first' from command line to 'False'
+[2.767s] Level 5:colcon.colcon_core.verb:set package 'slam_ultrasonic' build argument 'cmake_force_configure' from command line to 'False'
+[2.768s] Level 5:colcon.colcon_core.verb:set package 'slam_ultrasonic' build argument 'ament_cmake_args' from command line to 'None'
+[2.768s] Level 5:colcon.colcon_core.verb:set package 'slam_ultrasonic' build argument 'catkin_cmake_args' from command line to 'None'
+[2.768s] Level 5:colcon.colcon_core.verb:set package 'slam_ultrasonic' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.768s] DEBUG:colcon.colcon_core.verb:Building package 'slam_ultrasonic' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/pi/final_ws/src/build/slam_ultrasonic', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/pi/final_ws/src/install/slam_ultrasonic', 'merge_install': False, 'path': '/home/pi/final_ws/src/slam_ultrasonic', 'symlink_install': False, 'test_result_base': None}
+[2.769s] Level 5:colcon.colcon_core.verb:set package 'yolo' build argument 'cmake_args' from command line to 'None'
+[2.770s] Level 5:colcon.colcon_core.verb:set package 'yolo' build argument 'cmake_target' from command line to 'None'
+[2.770s] Level 5:colcon.colcon_core.verb:set package 'yolo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.770s] Level 5:colcon.colcon_core.verb:set package 'yolo' build argument 'cmake_clean_cache' from command line to 'False'
+[2.770s] Level 5:colcon.colcon_core.verb:set package 'yolo' build argument 'cmake_clean_first' from command line to 'False'
+[2.770s] Level 5:colcon.colcon_core.verb:set package 'yolo' build argument 'cmake_force_configure' from command line to 'False'
+[2.770s] Level 5:colcon.colcon_core.verb:set package 'yolo' build argument 'ament_cmake_args' from command line to 'None'
+[2.770s] Level 5:colcon.colcon_core.verb:set package 'yolo' build argument 'catkin_cmake_args' from command line to 'None'
+[2.770s] Level 5:colcon.colcon_core.verb:set package 'yolo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.771s] DEBUG:colcon.colcon_core.verb:Building package 'yolo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/pi/final_ws/src/build/yolo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/pi/final_ws/src/install/yolo', 'merge_install': False, 'path': '/home/pi/final_ws/src/yolo', 'symlink_install': False, 'test_result_base': None}
+[2.771s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[2.775s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[2.776s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/pi/final_ws/src/my_robot' with build type 'ament_cmake'
+[2.777s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/pi/final_ws/src/my_robot'
+[2.800s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[2.801s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.801s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.828s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/pi/final_ws/src/pi_camera_ros' with build type 'ament_python'
+[2.829s] Level 1:colcon.colcon_core.shell:create_environment_hook('pi_camera', 'ament_prefix_path')
+[2.831s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/final_ws/src/install/pi_camera/share/pi_camera/hook/ament_prefix_path.ps1'
+[2.839s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/pi/final_ws/src/install/pi_camera/share/pi_camera/hook/ament_prefix_path.dsv'
+[2.842s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/final_ws/src/install/pi_camera/share/pi_camera/hook/ament_prefix_path.sh'
+[2.846s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.847s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.868s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/pi/final_ws/src/slam_ultrasonic' with build type 'ament_cmake'
+[2.869s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/pi/final_ws/src/slam_ultrasonic'
+[2.871s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.871s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.896s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/pi/final_ws/src/yolo' with build type 'ament_cmake'
+[2.897s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/pi/final_ws/src/yolo'
+[2.899s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.900s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.951s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/pi/final_ws/src/build/my_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/final_ws/install/pi_camera:/opt/ros/humble /usr/bin/cmake /home/pi/final_ws/src/my_robot -DCMAKE_INSTALL_PREFIX=/home/pi/final_ws/src/install/my_robot
+[4.738s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/pi/final_ws/src/pi_camera_ros'
+[4.740s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.741s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.778s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/pi/final_ws/src/build/slam_ultrasonic': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/final_ws/install/pi_camera:/opt/ros/humble /usr/bin/cmake /home/pi/final_ws/src/slam_ultrasonic -DCMAKE_INSTALL_PREFIX=/home/pi/final_ws/src/install/slam_ultrasonic
+[4.807s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/pi/final_ws/src/build/yolo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/final_ws/install/pi_camera:/opt/ros/humble /usr/bin/cmake /home/pi/final_ws/src/yolo -DCMAKE_INSTALL_PREFIX=/home/pi/final_ws/src/install/yolo
+[9.466s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/pi/final_ws/src/pi_camera_ros': PYTHONPATH=/home/pi/final_ws/src/build/pi_camera/prefix_override:/home/pi/final_ws/src/install/pi_camera/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/pi_camera build --build-base /home/pi/final_ws/src/build/pi_camera/build install --record /home/pi/final_ws/src/build/pi_camera/install.log --single-version-externally-managed install_data
+[11.249s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/pi/final_ws/src/build/slam_ultrasonic' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/final_ws/install/pi_camera:/opt/ros/humble /usr/bin/cmake /home/pi/final_ws/src/slam_ultrasonic -DCMAKE_INSTALL_PREFIX=/home/pi/final_ws/src/install/slam_ultrasonic
+[11.251s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/pi/final_ws/src/build/slam_ultrasonic': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/final_ws/install/pi_camera:/opt/ros/humble /usr/bin/cmake --build /home/pi/final_ws/src/build/slam_ultrasonic -- -j4 -l4
+[11.451s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/pi/final_ws/src/build/slam_ultrasonic' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/final_ws/install/pi_camera:/opt/ros/humble /usr/bin/cmake --build /home/pi/final_ws/src/build/slam_ultrasonic -- -j4 -l4
+[11.754s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/pi/final_ws/src/build/slam_ultrasonic': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/final_ws/install/pi_camera:/opt/ros/humble /usr/bin/cmake --install /home/pi/final_ws/src/build/slam_ultrasonic
+[12.091s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(slam_ultrasonic)
+[12.129s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/pi/final_ws/src/build/slam_ultrasonic' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/final_ws/install/pi_camera:/opt/ros/humble /usr/bin/cmake --install /home/pi/final_ws/src/build/slam_ultrasonic
+[12.160s] Level 1:colcon.colcon_core.environment:checking '/home/pi/final_ws/src/install/slam_ultrasonic' for CMake module files
+[12.170s] Level 1:colcon.colcon_core.environment:checking '/home/pi/final_ws/src/install/slam_ultrasonic' for CMake config files
+[12.182s] Level 1:colcon.colcon_core.shell:create_environment_hook('slam_ultrasonic', 'cmake_prefix_path')
+[12.198s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic/hook/cmake_prefix_path.ps1'
+[12.205s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic/hook/cmake_prefix_path.dsv'
+[12.213s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic/hook/cmake_prefix_path.sh'
+[12.220s] Level 1:colcon.colcon_core.environment:checking '/home/pi/final_ws/src/install/slam_ultrasonic/lib'
+[12.222s] Level 1:colcon.colcon_core.environment:checking '/home/pi/final_ws/src/install/slam_ultrasonic/bin'
+[12.224s] Level 1:colcon.colcon_core.environment:checking '/home/pi/final_ws/src/install/slam_ultrasonic/lib/pkgconfig/slam_ultrasonic.pc'
+[12.229s] Level 1:colcon.colcon_core.environment:checking '/home/pi/final_ws/src/install/slam_ultrasonic/lib/python3.10/site-packages'
+[12.233s] Level 1:colcon.colcon_core.environment:checking '/home/pi/final_ws/src/install/slam_ultrasonic/bin'
+[12.239s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic/package.ps1'
+[12.245s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic/package.dsv'
+[12.250s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic/package.sh'
+[12.254s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic/package.bash'
+[12.259s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic/package.zsh'
+[12.264s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/pi/final_ws/src/install/slam_ultrasonic/share/colcon-core/packages/slam_ultrasonic)
+[12.275s] Level 1:colcon.colcon_core.environment:checking '/home/pi/final_ws/src/install/pi_camera' for CMake module files
+[12.277s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/pi/final_ws/src/pi_camera_ros' returned '0': PYTHONPATH=/home/pi/final_ws/src/build/pi_camera/prefix_override:/home/pi/final_ws/src/install/pi_camera/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/pi_camera build --build-base /home/pi/final_ws/src/build/pi_camera/build install --record /home/pi/final_ws/src/build/pi_camera/install.log --single-version-externally-managed install_data
+[12.279s] Level 1:colcon.colcon_core.environment:checking '/home/pi/final_ws/src/install/pi_camera' for CMake config files
+[12.284s] Level 1:colcon.colcon_core.environment:checking '/home/pi/final_ws/src/install/pi_camera/lib'
+[12.285s] Level 1:colcon.colcon_core.environment:checking '/home/pi/final_ws/src/install/pi_camera/bin'
+[12.286s] Level 1:colcon.colcon_core.environment:checking '/home/pi/final_ws/src/install/pi_camera/lib/pkgconfig/pi_camera.pc'
+[12.288s] Level 1:colcon.colcon_core.environment:checking '/home/pi/final_ws/src/install/pi_camera/lib/python3.10/site-packages'
+[12.289s] Level 1:colcon.colcon_core.shell:create_environment_hook('pi_camera', 'pythonpath')
+[12.290s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/final_ws/src/install/pi_camera/share/pi_camera/hook/pythonpath.ps1'
+[12.293s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/pi/final_ws/src/install/pi_camera/share/pi_camera/hook/pythonpath.dsv'
+[12.296s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/final_ws/src/install/pi_camera/share/pi_camera/hook/pythonpath.sh'
+[12.299s] Level 1:colcon.colcon_core.environment:checking '/home/pi/final_ws/src/install/pi_camera/bin'
+[12.300s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pi_camera)
+[12.303s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/final_ws/src/install/pi_camera/share/pi_camera/package.ps1'
+[12.309s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/pi/final_ws/src/install/pi_camera/share/pi_camera/package.dsv'
+[12.317s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/final_ws/src/install/pi_camera/share/pi_camera/package.sh'
+[12.322s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/final_ws/src/install/pi_camera/share/pi_camera/package.bash'
+[12.326s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/final_ws/src/install/pi_camera/share/pi_camera/package.zsh'
+[12.329s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/pi/final_ws/src/install/pi_camera/share/colcon-core/packages/pi_camera)
+[12.431s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(slam_ultrasonic)
+[12.434s] Level 1:colcon.colcon_core.environment:checking '/home/pi/final_ws/src/install/slam_ultrasonic' for CMake module files
+[12.437s] Level 1:colcon.colcon_core.environment:checking '/home/pi/final_ws/src/install/slam_ultrasonic' for CMake config files
+[12.441s] Level 1:colcon.colcon_core.shell:create_environment_hook('slam_ultrasonic', 'cmake_prefix_path')
+[12.442s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic/hook/cmake_prefix_path.ps1'
+[12.444s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic/hook/cmake_prefix_path.dsv'
+[12.447s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic/hook/cmake_prefix_path.sh'
+[12.450s] Level 1:colcon.colcon_core.environment:checking '/home/pi/final_ws/src/install/slam_ultrasonic/lib'
+[12.451s] Level 1:colcon.colcon_core.environment:checking '/home/pi/final_ws/src/install/slam_ultrasonic/bin'
+[12.451s] Level 1:colcon.colcon_core.environment:checking '/home/pi/final_ws/src/install/slam_ultrasonic/lib/pkgconfig/slam_ultrasonic.pc'
+[12.452s] Level 1:colcon.colcon_core.environment:checking '/home/pi/final_ws/src/install/slam_ultrasonic/lib/python3.10/site-packages'
+[12.454s] Level 1:colcon.colcon_core.environment:checking '/home/pi/final_ws/src/install/slam_ultrasonic/bin'
+[12.455s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic/package.ps1'
+[12.459s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic/package.dsv'
+[12.461s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic/package.sh'
+[12.464s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic/package.bash'
+[12.466s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/final_ws/src/install/slam_ultrasonic/share/slam_ultrasonic/package.zsh'
+[12.473s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/pi/final_ws/src/install/slam_ultrasonic/share/colcon-core/packages/slam_ultrasonic)
+[12.789s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/pi/final_ws/src/build/yolo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/final_ws/install/pi_camera:/opt/ros/humble /usr/bin/cmake /home/pi/final_ws/src/yolo -DCMAKE_INSTALL_PREFIX=/home/pi/final_ws/src/install/yolo
+[12.791s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/pi/final_ws/src/build/yolo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/final_ws/install/pi_camera:/opt/ros/humble /usr/bin/cmake --build /home/pi/final_ws/src/build/yolo -- -j4 -l4
+[12.973s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/pi/final_ws/src/build/yolo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/final_ws/install/pi_camera:/opt/ros/humble /usr/bin/cmake --build /home/pi/final_ws/src/build/yolo -- -j4 -l4
+[13.131s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/pi/final_ws/src/build/yolo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/final_ws/install/pi_camera:/opt/ros/humble /usr/bin/cmake --install /home/pi/final_ws/src/build/yolo
+[13.400s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(yolo)
+[13.401s] Level 1:colcon.colcon_core.environment:checking '/home/pi/final_ws/src/install/yolo' for CMake module files
+[13.404s] Level 1:colcon.colcon_core.environment:checking '/home/pi/final_ws/src/install/yolo' for CMake config files
+[13.406s] Level 1:colcon.colcon_core.shell:create_environment_hook('yolo', 'cmake_prefix_path')
+[13.407s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/final_ws/src/install/yolo/share/yolo/hook/cmake_prefix_path.ps1'
+[13.410s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/pi/final_ws/src/build/yolo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/final_ws/install/pi_camera:/opt/ros/humble /usr/bin/cmake --install /home/pi/final_ws/src/build/yolo
+[13.413s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/pi/final_ws/src/install/yolo/share/yolo/hook/cmake_prefix_path.dsv'
+[13.415s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/final_ws/src/install/yolo/share/yolo/hook/cmake_prefix_path.sh'
+[13.418s] Level 1:colcon.colcon_core.environment:checking '/home/pi/final_ws/src/install/yolo/lib'
+[13.420s] Level 1:colcon.colcon_core.environment:checking '/home/pi/final_ws/src/install/yolo/bin'
+[13.420s] Level 1:colcon.colcon_core.environment:checking '/home/pi/final_ws/src/install/yolo/lib/pkgconfig/yolo.pc'
+[13.422s] Level 1:colcon.colcon_core.environment:checking '/home/pi/final_ws/src/install/yolo/lib/python3.10/site-packages'
+[13.423s] Level 1:colcon.colcon_core.environment:checking '/home/pi/final_ws/src/install/yolo/bin'
+[13.425s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/final_ws/src/install/yolo/share/yolo/package.ps1'
+[13.427s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/pi/final_ws/src/install/yolo/share/yolo/package.dsv'
+[13.429s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/final_ws/src/install/yolo/share/yolo/package.sh'
+[13.432s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/final_ws/src/install/yolo/share/yolo/package.bash'
+[13.433s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/final_ws/src/install/yolo/share/yolo/package.zsh'
+[13.435s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/pi/final_ws/src/install/yolo/share/colcon-core/packages/yolo)
+[13.546s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(yolo)
+[13.547s] Level 1:colcon.colcon_core.environment:checking '/home/pi/final_ws/src/install/yolo' for CMake module files
+[13.550s] Level 1:colcon.colcon_core.environment:checking '/home/pi/final_ws/src/install/yolo' for CMake config files
+[13.553s] Level 1:colcon.colcon_core.shell:create_environment_hook('yolo', 'cmake_prefix_path')
+[13.554s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/final_ws/src/install/yolo/share/yolo/hook/cmake_prefix_path.ps1'
+[13.556s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/pi/final_ws/src/install/yolo/share/yolo/hook/cmake_prefix_path.dsv'
+[13.558s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/final_ws/src/install/yolo/share/yolo/hook/cmake_prefix_path.sh'
+[13.561s] Level 1:colcon.colcon_core.environment:checking '/home/pi/final_ws/src/install/yolo/lib'
+[13.562s] Level 1:colcon.colcon_core.environment:checking '/home/pi/final_ws/src/install/yolo/bin'
+[13.563s] Level 1:colcon.colcon_core.environment:checking '/home/pi/final_ws/src/install/yolo/lib/pkgconfig/yolo.pc'
+[13.564s] Level 1:colcon.colcon_core.environment:checking '/home/pi/final_ws/src/install/yolo/lib/python3.10/site-packages'
+[13.565s] Level 1:colcon.colcon_core.environment:checking '/home/pi/final_ws/src/install/yolo/bin'
+[13.567s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/final_ws/src/install/yolo/share/yolo/package.ps1'
+[13.571s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/pi/final_ws/src/install/yolo/share/yolo/package.dsv'
+[13.574s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/final_ws/src/install/yolo/share/yolo/package.sh'
+[13.577s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/final_ws/src/install/yolo/share/yolo/package.bash'
+[13.580s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/final_ws/src/install/yolo/share/yolo/package.zsh'
+[13.583s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/pi/final_ws/src/install/yolo/share/colcon-core/packages/yolo)
+[25.198s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/pi/final_ws/src/build/my_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/final_ws/install/pi_camera:/opt/ros/humble /usr/bin/cmake /home/pi/final_ws/src/my_robot -DCMAKE_INSTALL_PREFIX=/home/pi/final_ws/src/install/my_robot
+[25.207s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/pi/final_ws/src/build/my_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/final_ws/install/pi_camera:/opt/ros/humble /usr/bin/cmake --build /home/pi/final_ws/src/build/my_robot -- -j4 -l4
+[42.356s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/pi/final_ws/src/build/my_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/final_ws/install/pi_camera:/opt/ros/humble /usr/bin/cmake --build /home/pi/final_ws/src/build/my_robot -- -j4 -l4
+[42.503s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/pi/final_ws/src/build/my_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/final_ws/install/pi_camera:/opt/ros/humble /usr/bin/cmake --install /home/pi/final_ws/src/build/my_robot
+[42.599s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_robot)
+[42.600s] Level 1:colcon.colcon_core.environment:checking '/home/pi/final_ws/src/install/my_robot' for CMake module files
+[42.602s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/pi/final_ws/src/build/my_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/final_ws/install/pi_camera:/opt/ros/humble /usr/bin/cmake --install /home/pi/final_ws/src/build/my_robot
+[42.605s] Level 1:colcon.colcon_core.environment:checking '/home/pi/final_ws/src/install/my_robot' for CMake config files
+[42.609s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_robot', 'cmake_prefix_path')
+[42.610s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/final_ws/src/install/my_robot/share/my_robot/hook/cmake_prefix_path.ps1'
+[42.612s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/pi/final_ws/src/install/my_robot/share/my_robot/hook/cmake_prefix_path.dsv'
+[42.614s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/final_ws/src/install/my_robot/share/my_robot/hook/cmake_prefix_path.sh'
+[42.617s] Level 1:colcon.colcon_core.environment:checking '/home/pi/final_ws/src/install/my_robot/lib'
+[42.617s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_robot', 'ld_library_path_lib')
+[42.618s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/final_ws/src/install/my_robot/share/my_robot/hook/ld_library_path_lib.ps1'
+[42.620s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/pi/final_ws/src/install/my_robot/share/my_robot/hook/ld_library_path_lib.dsv'
+[42.622s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/final_ws/src/install/my_robot/share/my_robot/hook/ld_library_path_lib.sh'
+[42.623s] Level 1:colcon.colcon_core.environment:checking '/home/pi/final_ws/src/install/my_robot/bin'
+[42.624s] Level 1:colcon.colcon_core.environment:checking '/home/pi/final_ws/src/install/my_robot/lib/pkgconfig/my_robot.pc'
+[42.625s] Level 1:colcon.colcon_core.environment:checking '/home/pi/final_ws/src/install/my_robot/lib/python3.10/site-packages'
+[42.626s] Level 1:colcon.colcon_core.environment:checking '/home/pi/final_ws/src/install/my_robot/bin'
+[42.627s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/final_ws/src/install/my_robot/share/my_robot/package.ps1'
+[42.630s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/pi/final_ws/src/install/my_robot/share/my_robot/package.dsv'
+[42.632s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/final_ws/src/install/my_robot/share/my_robot/package.sh'
+[42.633s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/final_ws/src/install/my_robot/share/my_robot/package.bash'
+[42.635s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/final_ws/src/install/my_robot/share/my_robot/package.zsh'
+[42.636s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/pi/final_ws/src/install/my_robot/share/colcon-core/packages/my_robot)
+[42.774s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_robot)
+[42.775s] Level 1:colcon.colcon_core.environment:checking '/home/pi/final_ws/src/install/my_robot' for CMake module files
+[42.779s] Level 1:colcon.colcon_core.environment:checking '/home/pi/final_ws/src/install/my_robot' for CMake config files
+[42.784s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_robot', 'cmake_prefix_path')
+[42.785s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/final_ws/src/install/my_robot/share/my_robot/hook/cmake_prefix_path.ps1'
+[42.787s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/pi/final_ws/src/install/my_robot/share/my_robot/hook/cmake_prefix_path.dsv'
+[42.789s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/final_ws/src/install/my_robot/share/my_robot/hook/cmake_prefix_path.sh'
+[42.791s] Level 1:colcon.colcon_core.environment:checking '/home/pi/final_ws/src/install/my_robot/lib'
+[42.792s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_robot', 'ld_library_path_lib')
+[42.793s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/final_ws/src/install/my_robot/share/my_robot/hook/ld_library_path_lib.ps1'
+[42.795s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/pi/final_ws/src/install/my_robot/share/my_robot/hook/ld_library_path_lib.dsv'
+[42.798s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/final_ws/src/install/my_robot/share/my_robot/hook/ld_library_path_lib.sh'
+[42.800s] Level 1:colcon.colcon_core.environment:checking '/home/pi/final_ws/src/install/my_robot/bin'
+[42.800s] Level 1:colcon.colcon_core.environment:checking '/home/pi/final_ws/src/install/my_robot/lib/pkgconfig/my_robot.pc'
+[42.801s] Level 1:colcon.colcon_core.environment:checking '/home/pi/final_ws/src/install/my_robot/lib/python3.10/site-packages'
+[42.802s] Level 1:colcon.colcon_core.environment:checking '/home/pi/final_ws/src/install/my_robot/bin'
+[42.804s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/final_ws/src/install/my_robot/share/my_robot/package.ps1'
+[42.807s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/pi/final_ws/src/install/my_robot/share/my_robot/package.dsv'
+[42.809s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/final_ws/src/install/my_robot/share/my_robot/package.sh'
+[42.811s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/final_ws/src/install/my_robot/share/my_robot/package.bash'
+[42.814s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/final_ws/src/install/my_robot/share/my_robot/package.zsh'
+[42.816s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/pi/final_ws/src/install/my_robot/share/colcon-core/packages/my_robot)
+[42.818s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[42.821s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[42.822s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[42.823s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[42.860s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[42.861s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[42.861s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[42.866s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[42.866s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[42.867s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/pi/final_ws/src/install/local_setup.ps1'
+[42.874s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/pi/final_ws/src/install/_local_setup_util_ps1.py'
+[42.882s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/pi/final_ws/src/install/setup.ps1'
+[42.891s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/pi/final_ws/src/install/local_setup.sh'
+[42.894s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/pi/final_ws/src/install/_local_setup_util_sh.py'
+[42.896s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/pi/final_ws/src/install/setup.sh'
+[42.903s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/pi/final_ws/src/install/local_setup.bash'
+[42.906s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/pi/final_ws/src/install/setup.bash'
+[42.912s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/pi/final_ws/src/install/local_setup.zsh'
+[42.915s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/pi/final_ws/src/install/setup.zsh'
