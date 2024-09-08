@@ -1,0 +1,34 @@
+names:
+  0: person
+  1: car
+  2: motorcycle
+  3: road-signs
+  4: bus_stop
+  5: do_not_enter
+  6: do_not_stop
+  7: do_not_turn_l
+  8: do_not_turn_r
+  9: do_not_u_turn
+  10: enter_left_lane
+  11: green_light
+  12: left_right_lane
+  13: no_parking
+  14: parking
+  15: ped_crossing
+  16: ped_zebra_cross
+  17: railway_crossing
+  18: red_light
+  19: stop
+  20: t_intersection_l
+  21: traffic_light
+  22: u_turn
+  23: warning
+  24: yellow_light
+  25: potholes
+  26: pothole
+
+nc: 27
+
+test: test/images
+train: train/images
+val: valid/images
